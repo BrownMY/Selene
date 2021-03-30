@@ -2,13 +2,12 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Subscription(models.Model):
-  user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     subscription = models.BooleanField()
     
 
 def __str__(self):
     return self.name
-
 
 class Product(models.Model):
     name = models.CharField(max_length=100)
@@ -18,12 +17,8 @@ class Product(models.Model):
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-def __str__(self):
-    return self.name
-
-
 class Invoice(models.Model):
-    user_id = models.IntegerField()
+    # user_id = models.IntegerField()
     total_cost = models.IntegerField()
     address = models.CharField(max_length=250)
     city = models.CharField(max_length=100)
@@ -32,5 +27,3 @@ class Invoice(models.Model):
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-def __str__(self):
-    return self.name
