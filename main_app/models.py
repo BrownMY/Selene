@@ -18,9 +18,6 @@ class Product(models.Model):
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-def __str__(self):
-    return self.name
-
 
 class Invoice(models.Model):
     user_id = models.IntegerField()
@@ -31,6 +28,3 @@ class Invoice(models.Model):
     zipcode = models.IntegerField()
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-def __str__(self):
-    return self.name
