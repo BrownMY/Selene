@@ -9,7 +9,6 @@ class Subscription(models.Model):
 def __str__(self):
     return self.name
 
-
 class Product(models.Model):
     name = models.CharField(max_length=100)
     price = models.IntegerField()
@@ -17,10 +16,6 @@ class Product(models.Model):
     category = models.CharField(max_length=100)
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-def __str__(self):
-    return self.name
-
 
 class Invoice(models.Model):
     user_id = models.IntegerField()
@@ -32,5 +27,3 @@ class Invoice(models.Model):
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-def __str__(self):
-    return self.name
