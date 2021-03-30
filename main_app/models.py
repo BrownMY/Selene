@@ -18,7 +18,7 @@ class Product(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
 class Invoice(models.Model):
-    user_id = models.IntegerField()
+    # user_id = models.IntegerField()
     total_cost = models.IntegerField()
     address = models.CharField(max_length=250)
     city = models.CharField(max_length=100)
