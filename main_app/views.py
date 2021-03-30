@@ -21,8 +21,9 @@ def sign_up(request):
         else:
             error_message = 'That was a no go. Invalid signup'
     # this will run after if it's not a POST or it was invalid
-    form = UserCreationForm()
-    return render(request, 'registration/signup.html', {
+            form = UserCreationForm()
+        return render(request, 'registration/signup.html', {
         'form': form,
         'error_message': error_message
     })
+
