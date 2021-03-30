@@ -26,4 +26,3 @@ class Invoice(models.Model):
     zipcode = models.IntegerField()
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-
