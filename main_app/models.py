@@ -1,23 +1,18 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-
-class User(models.Model):
-    name = models.IntegerField()
-    email = models.CharField(max_length=100)
-    username = models.CharField(max_length=250)
-    password = models.CharField(max_length=100)
-    subscription = models.BooleanField
-    favorites = models.
-    # this is associated with a user
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+class Subscription(models.Model):
+  user = models.OneToOneField(User, on_delete=models.CASCADE)
+    subscription = models.BooleanField()
+    
 
 def __str__(self):
     return self.name
 
 
 class Product(models.Model):
-    name = models.IntegerField()
-    price = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
+    price = models.IntegerField()
     description = models.CharField(max_length=250)
     category = models.CharField(max_length=100)
     # this is associated with a user
@@ -27,23 +22,13 @@ def __str__(self):
     return self.name
 
 
-class Product(models.Model):
-    name = models.IntegerField()
-    price = models.CharField(max_length=100)
-    description = models.CharField(max_length=250)
-    category = models.CharField(max_length=100)
-    # this is associated with a user
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-def __str__(self):
-    return self.name
-
-
-class Product(models.Model):
-    name = models.IntegerField()
-    price = models.CharField(max_length=100)
-    description = models.CharField(max_length=250)
-    category = models.CharField(max_length=100)
+class Invoice(models.Model):
+    user_id = models.IntegerField()
+    total_cost = models.IntegerField()
+    address = models.CharField(max_length=250)
+    city = models.CharField(max_length=100)
+    state = models.CharField(max_length=100)
+    zipcode = models.IntegerField()
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
