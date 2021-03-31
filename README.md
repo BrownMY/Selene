@@ -21,7 +21,7 @@
 ![alt text](main_app/assets/Selene-Team.png)
 
 
-![alt text](main_app/assets/User-account.png)
+![alt text](main_app/assets/User-Account.png)
 
 
 ![alt text](main_app/assets/Checkout.png)
