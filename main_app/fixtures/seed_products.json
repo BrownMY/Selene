@@ -7,7 +7,7 @@
             "name": "Moisturizing Face Mask",
             "price": 14,
             "description": "Overnight moisturizing face mask. Vegan and cruelty-free, this mask is infused with coconut water and prickly pear extract to hydrate, vitamin B-3 to energize, and fatty acids to seal in moisture so your skin stays supple and strong",
-            "category": ["calm", "indulge","sleep"],
+            "category": ["calm", "indulge", "sleep"],
             "imgurl": "testphotourl"
         }
         
