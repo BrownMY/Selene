@@ -26,3 +26,31 @@ def about(request):
 #             'form': form,
 #             'error_message': error_message
 #         })
+
+def login(request):
+    return render(request, 'login.html')
+
+def products_index(request):
+    products = Product.objects.all()
+    return render(request, 'products/index.html', {'products': products})
+
+def calm(request):
+    return render(request, 'products/calm.html')
+
+def energize(request):
+    return render(request, 'products/energize.html')
+
+def indulge(request):
+    return render(request, 'products/indulge.html')
+
+def romance(request):
+    return render(request, 'products/romance.html')
+
+def sleep(request):
+    return render(request, 'products/sleep.html')
+
+def mood(request):
+    return render(request, 'products/mood.html')
+
+
+
