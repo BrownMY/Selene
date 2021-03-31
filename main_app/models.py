@@ -16,7 +16,7 @@ class Product(models.Model):
     category = models.CharField(max_length=100)
     imgurl = models.CharField(max_length=250)
     # this is associated with a user
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
 
     def __str__(self):
         return self.name
