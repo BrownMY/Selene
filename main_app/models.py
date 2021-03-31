@@ -17,7 +17,6 @@ class Product(models.Model):
     imgurl = models.CharField(max_length=250)
     # this is associated with a user
 
-
     def __str__(self):
         return self.name
         
