@@ -8,7 +8,7 @@
             "price": 14,
             "description": "Overnight moisturizing face mask. Vegan and cruelty-free, this mask is infused with coconut water and prickly pear extract to hydrate, vitamin B-3 to energize, and fatty acids to seal in moisture so your skin stays supple and strong",
             "category": ["calm", "indulge","sleep"],
-            "rating": 4
+            "rating": 4,
             "imgurl": "testphotourl"
         }
         
@@ -21,7 +21,7 @@
             "price": 22,
             "description": "Wake up on the right side of the bed with this vegan, cruelty-free, caffeine-infused serum that treats puffy skin and dark undereye circles.",
             "category": ["energize","sleep"],
-            "rating": 3
+            "rating": 3,
             "imgurl": "testphotourl"
         }
         
@@ -35,7 +35,7 @@
             "description": "Indulge your senses with these thirteen cute and carefully curated scented bath bombs meant to invigorate and destress your life.",
             "category": ["calm", "indulge", "energize", "sleep", "romance"],
             "rating": 5,
-            "imgurl": "main_app/images/bathbomb.jpg"
+            "imgurl": "testphotourl"
         }
         
     },
@@ -125,7 +125,7 @@
             "price": 25,
             "description": "Bentonite clay, water, Rose absolute essential oil, rose water concentrate.",
             "category": ["romance", "indulge"],
-            "rating": 4,
+            "rating": 5,
             "imgurl": "testphotourl"
         }
         
