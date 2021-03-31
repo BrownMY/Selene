@@ -14,6 +14,7 @@ class Product(models.Model):
     price = models.IntegerField()
     description = models.CharField(max_length=250)
     category = models.CharField(max_length=100)
+    rating = models.IntegerField()
     imgurl = models.CharField(max_length=250)
     # this is associated with a user
 
