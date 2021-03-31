@@ -9,11 +9,10 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
-
 def sign_up(request):
         error_message = ''
-        if request.method == 'POST':
-            form = UserCreationForm(request.POST)
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             # ok user created log them in
@@ -27,3 +26,4 @@ def sign_up(request):
         'form': form,
         'error_message': error_message
     })
+
