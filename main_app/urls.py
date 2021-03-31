@@ -4,14 +4,13 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
-    path('login/', views.about, name='about'),
-    path('signup/', views.about, name='sign_up'),
-    path('products/', views.about, name='products'),
-    path('products/calm/', views.about, name='about'),
-    path('products/energize/', views.about, name='about'),
-    path('products/indulge/', views.about, name='about'),
-    path('products/romance/', views.about, name='about'),
-    path('products/sleep/', views.about, name='about'),
-    path('products/find_by_mood/', views.about, name='about'),
+    path('login/', views.login, name='login'),
+    path('products/', views.products_index, name='products_index'),
+    path('products/calm/', views.calm, name='calm'),
+    path('products/energize/', views.energize, name='energize'),
+    path('products/indulge/', views.indulge, name='indulge'),
+    path('products/romance/', views.romance, name='romance'),
+    path('products/sleep/', views.sleep, name='sleep'),
+    path('products/mood/', views.mood, name='mood')
     
 ]
