@@ -9,7 +9,7 @@
             "description": "Overnight moisturizing face mask. Vegan and cruelty-free, this mask is infused with coconut water and prickly pear extract to hydrate, vitamin B-3 to energize, and fatty acids to seal in moisture so your skin stays supple and strong",
             "category": ["calm", "indulge","sleep"],
             "rating": 4,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/weEKbia.jpg"
         }
         
     },
@@ -22,7 +22,7 @@
             "description": "Wake up on the right side of the bed with this vegan, cruelty-free, caffeine-infused serum that treats puffy skin and dark undereye circles.",
             "category": ["energize","sleep"],
             "rating": 3,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/vf5Vnn7.jpg"
         }
         
     },
@@ -35,7 +35,9 @@
             "description": "Indulge your senses with these thirteen cute and carefully curated scented bath bombs meant to invigorate and destress your life.",
             "category": ["calm", "indulge", "energize", "sleep", "romance"],
             "rating": 5,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/MJukatO.jpg"
+            
+            
         }
         
     },
@@ -48,7 +50,7 @@
             "description": "Wavertree & London Sweet Pea and Jasmine Australian natural luxury soap bar 6oz",
             "category": ["energize", "indulge"],
             "rating": 4,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/pExQx2d.jpg"
         }
         
     },
@@ -61,7 +63,7 @@
             "description": "Five essentials that work in harmony to revitalize dry, dehydrated skin, replenish vital moisture, and gently cleanse for deeply conditioned skin. Omega-rich fatty acids and vitamin c help keep your skin clear and vibrant.",
             "category": ["energize", "indulge"],
             "rating": 5,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/XSVkw30.jpg"
         }
         
     },
@@ -74,7 +76,7 @@
             "description": "A simple blend of Moroccan Rose Absolute essential oil, Rose-hip oil, mica.",
             "category": ["romance"],
             "rating": 3,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/rA02zy3.jpg"
         }
         
     },
@@ -87,7 +89,7 @@
             "description": "Water, Rose water concentrate, rose absolute essential oil, lemon essential oil, aloe gel.",
             "category": ["romance"],
             "rating": 4,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/RFCzXQS.jpg"
         }
         
     },
@@ -100,7 +102,7 @@
             "description": "A blend of nourishing ingredients to combat dry, dull skin. Sweet almond oil, rose-hip oil, Argan oil, rose absolute essential, clary Sage essential oils, Lavender essential oil.",
             "category": ["romance", "indulge"],
             "rating": 5,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/nM7xX7m.jpg"
         }
         
     },
@@ -113,7 +115,7 @@
             "description": "Candelilla ax, rosehip oil, Argan oil, rose absolute essential oil, eucalyptus oil.",
             "category": ["romance"],
             "rating": 4,
-            "imgurl": "testphotourl"
+            "imgurl": "https://i.imgur.com/uulLmt6.jpg"
         }
         
     },
@@ -125,8 +127,8 @@
             "price": 25,
             "description": "Bentonite clay, water, Rose absolute essential oil, rose water concentrate.",
             "category": ["romance", "indulge"],
-            "rating": 5,
-            "imgurl": "testphotourl"
+            "rating": 4,
+            "imgurl": "https://i.imgur.com/Xyqq9Am.jpg"
         }
         
     }
