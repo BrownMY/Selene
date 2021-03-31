@@ -43,7 +43,8 @@ def products_show(request, product_id):
     return render(request, 'products/show.html', {'product': product})
 
 def calm(request):
-    return render(request, 'products/calm.html')
+    products = Product.objects.all()
+    return render(request, 'products/calm.html', {'products': products})
 
 def energize(request):
     return render(request, 'products/energize.html')

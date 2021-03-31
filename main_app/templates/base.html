@@ -22,14 +22,20 @@
        
         
         <ul class="right hide-on-med-and-down">
-          <li><a href="{% url 'about' %}">About</a></li>
+          <li class="selene"><a href="{% url 'index'%}">Selenê</a></li>
+          <li><a href="{% url 'about' %}">Selenê Team</a></li>
           {% if user.is_authenticated %}
             
             <li><a href="{% url 'products_index' %}">View All Products</a></li>
+            <li><a href="{% url 'mood' %}">View by Mood</a></li>
             <li><a href="{% url 'logout' %}">Log out</a></li>
+            
+    
+
           {% else %}
             <li><a href="{% url 'login' %}">Log in</a></li>
             <li><a href="{% url 'sign_up' %}">Sign up</a></li>
+            <li><a href="{% url 'products_index' %}">View All Products</a></li>
           {% endif %}
         </ul>
       </div>
