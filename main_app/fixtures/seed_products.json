@@ -8,8 +8,8 @@
             "price": 35,
             "description": "testing",
             "category": "Romance",
-            "img": "",
-           
+            "imgurl": "testphotourl",
+            "user": 1
         }
         
     }
