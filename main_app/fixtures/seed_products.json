@@ -4,12 +4,119 @@
         "model": "main_app.product",
         "pk": 1,
         "fields": {
-            "name": "test",
-            "price": 35,
-            "description": "testing",
-            "category": "Romance",
-            "imgurl": "testphotourl",
-            "user": 1
+            "name": "Moisturizing Face Mask",
+            "price": 14,
+            "description": "Overnight moisturizing face mask. Vegan and cruelty-free, this mask is infused with coconut water and prickly pear extract to hydrate, vitamin B-3 to energize, and fatty acids to seal in moisture so your skin stays supple and strong",
+            "category": ["calm", "indulge","sleep"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 2,
+        "fields": {
+            "name": "Caffeine-Infused Wake Up Serum",
+            "price": 22,
+            "description": "Wake up on the right side of the bed with this vegan, cruelty-free, caffeine-infused serum that treats puffy skin and dark undereye circles.",
+            "category": ["energize","sleep"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 3,
+        "fields": {
+            "name": "Baker’s Dozen Bath Bombs",
+            "price": 49,
+            "description": "Indulge your senses with these thirteen cute and carefully curated scented bath bombs meant to invigorate and destress your life.",
+            "category": ["calm", "indulge", "energize", "sleep", "romance"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 4,
+        "fields": {
+            "name": "Australian exfoliating soap",
+            "price": 18,
+            "description": "Wavertree & London Sweet Pea and Jasmine Australian natural luxury soap bar 6oz",
+            "category": ["energize", "indulge"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 5,
+        "fields": {
+            "name": "Clear Skin Kit",
+            "price": 56,
+            "description": "Five essentials that work in harmony to revitalize dry, dehydrated skin, replenish vital moisture, and gently cleanse for deeply conditioned skin. Omega-rich fatty acids and vitamin c help keep your skin clear and vibrant.",
+            "category": ["energize", "indulge"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 6,
+        "fields": {
+            "name": "Pink Petal Moroccan Rose Moisture Sealant",
+            "price": 25,
+            "description": "A simple blend of Moroccan Rose Absolute essential oil, Rose-hip oil, mica.",
+            "category": ["romance"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 7,
+        "fields": {
+            "name": "Pink Petal Moisturizer",
+            "price": 22,
+            "description": "Water, Rose water concentrate, rose absolute essential oil, lemon essential oil, aloe gel.",
+            "category": ["romance"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 8,
+        "fields": {
+            "name": "Pink Petal Ultra Hydrating Oil",
+            "price": 40,
+            "description": "A blend of nourishing ingredients to combat dry, dull skin. Sweet almond oil, rose-hip oil, Argan oil, rose absolute essential, clary Sage essential oils, Lavender essential oil.",
+            "category": ["romance", "indulge"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 9,
+        "fields": {
+            "name": "Pink Petal Lip Balm (Set of 2)",
+            "price": 12,
+            "description": "Candelilla ax, rosehip oil, Argan oil, rose absolute essential oil, eucalyptus oil.",
+            "category": ["romance"],
+            "imgurl": "testphotourl"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 10,
+        "fields": {
+            "name": "Pink Petal Face Mask",
+            "price": 25,
+            "description": "Bentonite clay, water, Rose absolute essential oil, rose water concentrate.",
+            "category": ["romance", "indulge"],
+            "imgurl": "testphotourl"
         }
         
     }
