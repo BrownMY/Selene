@@ -20,10 +20,6 @@ class Product(models.Model):
 class Invoice(models.Model):
     # user_id = models.IntegerField()
     total_cost = models.IntegerField()
-    address = models.CharField(max_length=250)
-    city = models.CharField(max_length=100)
-    state = models.CharField(max_length=100)
-    zipcode = models.IntegerField()
     # this is associated with a user
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
