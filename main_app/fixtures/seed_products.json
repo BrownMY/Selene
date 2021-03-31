@@ -8,7 +8,8 @@
             "price": 35,
             "description": "testing",
             "category": "Romance",
-            "user": 1
+            "img": "",
+           
         }
         
     }
