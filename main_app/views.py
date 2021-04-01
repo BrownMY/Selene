@@ -46,26 +46,35 @@ def spotlight(request):
     products = Product.objects.all()
     return render(request, 'products/spotlight.html', {'products': products})
 
-def calm(request):
-    products = Product.objects.all()
-    return render(request, 'products/calm.html', {'products': products})
-
-def energize(request):
-    return render(request, 'products/energize.html')
-
-def indulge(request):
-    return render(request, 'products/indulge.html')
-
-def romance(request):
-    return render(request, 'products/romance.html')
-
-def sleep(request):
-    return render(request, 'products/sleep.html')
-
 def mood(request):
-    return render(request, 'products/mood.html')
+    products = Product.objects.all()
+    return render(request, 'products/mood.html', {'products': products})
+
+def mood_show(request, category):
+    category = Product.objects.filter(category=category)
+    # for category in category:
+    print('********', category)
+    
+    return render(request, 'products/mood_show.html', {'category': category})
+
+# def calm(request):
+#     products = Product.objects.all()
+#     return render(request, 'products/calm.html', {'products': products})
+
+# def energize(request):
+#     return render(request, 'products/energize.html')
+
+# def indulge(request):
+#     return render(request, 'products/indulge.html')
+
 
 def cart(request):
     return render(request, 'ecommerce/cart.html')
 
+# def romance(request):
+#     return render(request, 'products/romance.html')
+
+
+# def sleep(request):
+#     return render(request, 'products/sleep.html')
 
