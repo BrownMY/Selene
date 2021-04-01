@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -63,10 +64,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.context_processor.cart_total_amount',
             ],
         },
     },
 ]
+
+CART_SESSION_ID = 'cart'
 
 WSGI_APPLICATION = 'Selene.wsgi.application'
 

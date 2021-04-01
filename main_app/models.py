@@ -3,8 +3,9 @@ from django.contrib.auth.models import User
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=100)
-    price = models.IntegerField()
+    name = models.CharField(max_length=255) 
+    # image = models.ImageField(upload_to=’products/’) 
+    price = models.FloatField()
     description = models.CharField(max_length=250)
     category = models.CharField(max_length=100)
     rating = models.IntegerField()

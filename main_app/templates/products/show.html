@@ -8,7 +8,8 @@
     <img src='{{ product.imgurl }}'/>
     <p class="prod-price-show">${{ product.price }}</p>
     <p class="prod-rating-show">Rating: {{ product.rating }}</p>    
-    <p class="prod-mood-show">Category:<a href="/products/mood/{{ product.category }}">{{ product.category }}</a></p>    
+    <p class="prod-mood-show">Category:<a href="/products/mood/{{ product.category }}">{{ product.category }}</a></p>  
+    <p><a href="{% url 'cart_add' product.id %}">Add To Cart</a></p>  
 </div>
 <hr/>
 {% endblock %}
