@@ -16,14 +16,15 @@
     <nav>
       <div class="nav-wrapper">  
        
-        
-        <ul>
-          <li class="selene"><a href="{% url 'index'%}">Selenê</a></li>
+        <ul class="nav_list">
+          <h1 class="home_selene">Selene</h1>
+          <li class="home"><a href="{% url 'index'%}">Home</a></li>
           <li><a class="nav" href="{% url 'about' %}">Selenê Team</a></li>
           {% if user.is_authenticated %}
             
             <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li>
-            <li><a class="nav" href="{% url 'mood' %}">View by Mood</a></li>
+            
+            <li><a class="nav" href="{% url 'cart' %}">View your cart</a></li>
             <li><a class="nav" href="{% url 'logout' %}">Log out</a></li>
             
     

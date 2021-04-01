@@ -65,5 +65,7 @@ def sleep(request):
 def mood(request):
     return render(request, 'products/mood.html')
 
+def cart(request):
+    return render(request, 'ecommerce/cart.html')
 
 
