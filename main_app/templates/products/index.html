@@ -3,17 +3,25 @@
  
 
 {% block content %}
-    <h1>Products</h1>
+<h1 class="prod-index-head">Products</h1>
+<main class="prod-index-page">
+    
   
     {% for product in products %}
-      <a href="/products/{{product.id}}">
-        <p>Name: {{ product.name }}</p></a>
-        <p>Description: {{ product.description }}</p>
-        <p>Price: {{ product.price }}</p>
-        <img src="{{ product.imgurl }}"/>
+      <div class="prod-index-div">
+        <img class="prod-index-img" src="{{ product.imgurl }}"/>
+         <a href="/products/{{product.id}}">
+        <p>{{ product.name }}</p></a>
+        <p>{{ product.description }}</p>
+        <p>${{ product.price }}</p>
+        
         
       
         <hr/>
+      </div>
+</main>
+  
+   
     {% endfor %}
 
 

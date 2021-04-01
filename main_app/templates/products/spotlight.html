@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <h1>spotlight products</h1>
+    <p>our best rated products</p>
+
+    {% for product in products %}
+        {% if product.rating == 5 %}
+     <a href="/products/{{product.id}}">
+        <p>{{ product.name }}</p>
+        <img class="img-spotlight" src="{{ product.imgurl }}">
+
+    <hr />
+        {% endif %}
+    {% endfor %}
+
+{% endblock %}
