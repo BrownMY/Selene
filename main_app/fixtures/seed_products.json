@@ -7,7 +7,7 @@
             "name": "Moisturizing Face Mask",
             "price": 14,
             "description": "Overnight moisturizing face mask. Vegan and cruelty-free, this mask is infused with coconut water and prickly pear extract to hydrate, vitamin B-3 to energize, and fatty acids to seal in moisture so your skin stays supple and strong",
-            "category": ["calm", "indulge","sleep"],
+            "category": "sleep",
             "rating": 4,
             "imgurl": "https://i.imgur.com/weEKbia.jpg"
         }
@@ -20,7 +20,7 @@
             "name": "Caffeine-Infused Wake Up Serum",
             "price": 22,
             "description": "Wake up on the right side of the bed with this vegan, cruelty-free, caffeine-infused serum that treats puffy skin and dark undereye circles.",
-            "category": ["energize","sleep"],
+            "category": "energize",
             "rating": 3,
             "imgurl": "https://i.imgur.com/vf5Vnn7.jpg"
         }
@@ -33,7 +33,7 @@
             "name": "Baker’s Dozen Bath Bombs",
             "price": 49,
             "description": "Indulge your senses with these thirteen cute and carefully curated scented bath bombs meant to invigorate and destress your life.",
-            "category": ["calm", "indulge", "energize", "sleep", "romance"],
+            "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.imgur.com/MJukatO.jpg"
             
@@ -48,7 +48,7 @@
             "name": "Australian exfoliating soap",
             "price": 18,
             "description": "Wavertree & London Sweet Pea and Jasmine Australian natural luxury soap bar 6oz",
-            "category": ["energize", "indulge"],
+            "category": "calm",
             "rating": 4,
             "imgurl": "https://i.imgur.com/pExQx2d.jpg"
         }
@@ -61,7 +61,7 @@
             "name": "Clear Skin Kit",
             "price": 56,
             "description": "Five essentials that work in harmony to revitalize dry, dehydrated skin, replenish vital moisture, and gently cleanse for deeply conditioned skin. Omega-rich fatty acids and vitamin c help keep your skin clear and vibrant.",
-            "category": ["energize", "indulge"],
+            "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.imgur.com/XSVkw30.jpg"
         }
@@ -74,7 +74,7 @@
             "name": "Pink Petal Moroccan Rose Moisture Sealant",
             "price": 25,
             "description": "A simple blend of Moroccan Rose Absolute essential oil, Rose-hip oil, mica.",
-            "category": ["romance"],
+            "category": "romance",
             "rating": 3,
             "imgurl": "https://i.imgur.com/rA02zy3.jpg"
         }
@@ -87,7 +87,7 @@
             "name": "Pink Petal Moisturizer",
             "price": 22,
             "description": "Water, Rose water concentrate, rose absolute essential oil, lemon essential oil, aloe gel.",
-            "category": ["romance"],
+            "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/RFCzXQS.jpg"
         }
@@ -100,7 +100,7 @@
             "name": "Pink Petal Ultra Hydrating Oil",
             "price": 40,
             "description": "A blend of nourishing ingredients to combat dry, dull skin. Sweet almond oil, rose-hip oil, Argan oil, rose absolute essential, clary Sage essential oils, Lavender essential oil.",
-            "category": ["romance", "indulge"],
+            "category": "romance",
             "rating": 5,
             "imgurl": "https://i.imgur.com/nM7xX7m.jpg"
         }
@@ -110,10 +110,10 @@
         "model": "main_app.product",
         "pk": 9,
         "fields": {
-            "name": "Pink Petal Lip Balm (Set of 2)",
+            "name": "Pink Petal Lip Balm (set of 2)",
             "price": 12,
             "description": "Candelilla ax, rosehip oil, Argan oil, rose absolute essential oil, eucalyptus oil.",
-            "category": ["romance"],
+            "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/uulLmt6.jpg"
         }
@@ -126,9 +126,61 @@
             "name": "Pink Petal Face Mask",
             "price": 25,
             "description": "Bentonite clay, water, Rose absolute essential oil, rose water concentrate.",
-            "category": ["romance", "indulge"],
+            "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/Xyqq9Am.jpg"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 11,
+        "fields": {
+            "name": "BonAppétit Apple Cinnamon Soap Bar (set of 2)",
+            "price": 8,
+            "description": "Coconut milk, vitamin E & saponified oils of olive, coconut, grapeseed. Dried apples, cinnamon essential oil.",
+            "category": "indulge",
+            "rating": 4,
+            "imgurl": "https://i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 12,
+        "fields": {
+            "name": "BonAppétit Apple Cinnamon Bath Bombs",
+            "price": 49,
+            "description": "Dried apples, cinnamon essential oils incorporated into these 13 deliciously scented bath bombs.",
+            "category": "indulge",
+            "rating": 5,
+            "imgurl": "https://cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 13,
+        "fields": {
+            "name": "BonAppétit Lemon Vanilla Cake Soap bar (set of 2)",
+            "price": 8,
+            "description": "Coconut milk, vitamin E & saponified oils of olive, coconut, grapeseed. Lemon essential oil, cinnamon, Vanilla essential oil.",
+            "category": "indulge",
+            "rating": 5,
+            "imgurl": "https://i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 14,
+        "fields": {
+            "name": "BonAppétit Lemon Vanilla Bath Bombs",
+            "price": 49,
+            "description": "Lemon & Vanilla essential oil incorporated into these 13 deliciously scented bath bombs.",
+            "category": "indulge",
+            "rating": 5,
+            "imgurl": "https://images.saymedia-content.com/.image/t_share/MTc0NTAxMzUxODE5Mzg4OTE4/diy-bath-bomb-guide-and-7-inspiring-recipe-combinations.jpg"
         }
         
     }
