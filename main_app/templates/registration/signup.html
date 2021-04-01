@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <h3 class="affirmation">Affirmation: My ability to conquer my challenges is limitless; my potential to succeed is infinite. </h3>
 <h1 class = "signup">Create an account</h1>
 <form method='post' action="{% url 'sign_up' %}">
@@ -9,5 +10,6 @@
     <input type="submit" class="btn" value="sign_up">
     <input type="hidden" name="next" value="{{ next }}">
 </form>
+
 
 {% endblock %}

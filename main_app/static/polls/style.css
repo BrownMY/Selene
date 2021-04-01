@@ -3,10 +3,6 @@
 
 }
 
-body {
-
-    
-}
 .nav-wrapper {
     background-color: lavender;
     margin-top: 0;
@@ -71,6 +67,7 @@ img {
     height: 600px;
     width: 500px;
 }
+
 a{
     text-decoration: none;
 }
@@ -122,3 +119,4 @@ a{
     display: flex;
     color:rgb(138,96,207,1);
 }
+
