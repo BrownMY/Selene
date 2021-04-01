@@ -173,7 +173,7 @@
     },
     {
         "model": "main_app.product",
-        "pk": 13,
+        "pk": 14,
         "fields": {
             "name": "BonAppétit Lemon Vanilla Bath Bombs",
             "price": 49,

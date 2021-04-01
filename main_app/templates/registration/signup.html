@@ -2,11 +2,14 @@
 
 {% block content %}
 <h1>Hey sign up</h1>
-<form method='post' action="{% url 'sign_up' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" class="btn" value="sign_up">
-    <input type="hidden" name="next" value="{{ next }}">
-</form>
+
+    <form method='post' action="{% url 'sign_up' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn" value="sign_up">
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+
+
 
 {% endblock %}
