@@ -42,6 +42,10 @@ def products_show(request, product_id):
     product = Product.objects.get(id=product_id)
     return render(request, 'products/show.html', {'product': product})
 
+def spotlight(request):
+    products = Product.objects.all()
+    return render(request, 'products/spotlight.html', {'products': products})
+
 def calm(request):
     products = Product.objects.all()
     return render(request, 'products/calm.html', {'products': products})
