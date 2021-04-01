@@ -6,13 +6,17 @@
 
 {% load cart_tag %}
 
-Total Length :: {{request.session.cart|length}}
+Items in Cart: {{request.session.cart|length}}
 
-Cart Detail:
+<h3>Cart Details:</h3>
 
 {% for key,value in request.session.cart.items %}
-{{value.name}} {{value.price}} {{value.quantity}} Total {{ value.price|multiply:value.quantity }}
-
-{% endfor %}
+    <p>Product: {{value.name}}</p>
+    <img src={{value.imgurl}}/>
+    <p>Price: {{value.price}}</p>
+    <p>Quantity: {{value.quantity}}</p>
+    
+    <p>Product total: {{ value.price|multiply:value.quantity }}</p>
+    {% endfor %}
 
 {% endblock %}
