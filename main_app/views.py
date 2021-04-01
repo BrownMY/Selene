@@ -51,8 +51,11 @@ def mood(request):
     return render(request, 'products/mood.html', {'products': products})
 
 def mood_show(request, category):
-    category = Product.objects.get(category=category)
-    return render(request, 'products/mood.html', {'category': category})
+    category = Product.objects.filter(category=category)
+    # for category in category:
+    print('********', category)
+    
+    return render(request, 'products/mood_show.html', {'category': category})
 
 # def calm(request):
 #     products = Product.objects.all()
