@@ -31,7 +31,7 @@ def sign_up(request):
         'error_message': error_message
     })
 
-def login(request):
+def log_in(request):
     return render(request, 'login.html')
 
 def products_index(request):
