@@ -42,7 +42,11 @@ def products_show(request, product_id):
     product = Product.objects.get(id=product_id)
     return render(request, 'products/show.html', {'product': product})
 
-def calm(request):
+def calm(request, category):
+    category = Product.objects.get(category=category)
+    print('**************************')
+    print(category)
+    print('********************')
     return render(request, 'products/calm.html')
 
 def energize(request):

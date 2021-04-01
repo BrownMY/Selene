@@ -1,25 +1,26 @@
+{% extends 'base.html' %}
 
-    <h1>Calm</h1>
-    {% extends 'base.html' %}
 
- 
 
 {% block content %}
-    <h1>Products</h1>
-  
-    {% for product in products %}
-        {% if product.fields.category == "calm" %}
-        <!-- trying to get this logic to work still -->
-            <a href="/products/{{product.category}}">
-            <p>Name: {{ product.name }}</p>
-            <p>Description: {{ product.description }}</p>
-            <p>Price: {{ product.price }}</p>
-            <img src="{{ product.imgurl }}"/>
+<h1>Calm</h1>
+  <p>{{ products.category }}</p>
+    <!-- {% for products in products %} -->
+        <!-- {% for category in categories %} -->
+            <!-- {% if category == "calm" %} -->
+       
+            <!-- <a href="/products/{{products.category}}">
+            <p>Name: {{ products.name }}</p>
+            <p>Description: {{ products.description }}</p>
+            <p>Price: {{ products.price }}</p>
+            <img src="{{ products.imgurl }}"/>
         
              </a>
         <hr/>
-        {% endif %}
-    {% endfor %}
+             -->
+            <!-- {% endif %} -->
+        <!-- {% endfor %} -->
+    <!-- {% endfor %} -->
 
 
 {% endblock %}
