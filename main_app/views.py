@@ -31,7 +31,7 @@ def sign_up(request):
         'error_message': error_message
     })
 
-def login(request):
+def log_in(request):
     return render(request, 'login.html')
 
 def products_index(request):
@@ -67,8 +67,13 @@ def mood_show(request, category):
 # def indulge(request):
 #     return render(request, 'products/indulge.html')
 
+
+def cart(request):
+    return render(request, 'ecommerce/cart.html')
+
 # def romance(request):
 #     return render(request, 'products/romance.html')
+
 
 # def sleep(request):
 #     return render(request, 'products/sleep.html')

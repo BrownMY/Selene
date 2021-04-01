@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>{{ product.name }}</h1>
+<h3 class="affirmation">Affirmation: I radiate beauty, charm, and grace. </h3>
+<h1 class="product_name">{{ product.name }}</h1>
 
 
 <p class="prod-descrip-show">Description <br /> {{ product.description }}</p>
 <div class="prod-img-box-show">
     <img src='{{ product.imgurl }}'/>
-    <p class="prod-price-show">${{ product.price }}</p>
+    <p class="prod-price-show">${{ product.price }}</p>  
     <p class="prod-rating-show">Rating: {{ product.rating }}</p>    
-    <p class="prod-mood-show">Category:<a href="/products/mood/{{ product.category }}">{{ product.category }}</a></p>    
+    <p class="prod-mood-show">Category:<a href="/products/mood/{{ product.category }}">{{ product.category }}</a></p>   
+    <a href="/cart">Add item to your cart</a>      
 </div>
 <hr/>
 {% endblock %}

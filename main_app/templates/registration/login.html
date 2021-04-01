@@ -1,7 +1,9 @@
 
+{% extends 'base.html' %}
 
 {% block content %}
-<h1>Hey log in</h1>
+<h3 class="affirmation">Affirmation: My body is healthy; my mind is brilliant; my soul is tranquil.</h3>
+<h1 class="login">Log in</h1>
 <form method='post' action="{% url 'login' %}">
     {% csrf_token %}
     {{ form.as_p }}
