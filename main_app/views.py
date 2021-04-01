@@ -56,13 +56,15 @@ def mood_show(request, category):
 
 def cart(request):
     cart = Cart(request)
-    return render(request, 'cart.html')
+    return render(request, 'cart/cart.html')
 
 def cart_add(request, product_id):
     cart = Cart(request)
-    product = Product.objects.get(product_id=product_id)
+    product = Product.objects.get(id=product_id)
+    print(product)
     cart.add(product=product)
-    return redirect("home")
+    print(cart)
+    return redirect('cart')
 
 def item_clear(request, product_id):
     cart = Cart(request)
