@@ -5,10 +5,9 @@
 
 <p class="prod-descrip-show">Description <br /> {{ product.description }}</p>
 <div class="prod-img-box-show">
-    <img src="{{ product.imgurl }}"/>
+    <img src='{{ product.imgurl }}'/>
     <p class="prod-price-show">${{ product.price }}</p>
     <p class="prod-rating-show">Rating: {{ product.rating }}</p>    
 </div>
-
 <hr/>
 {% endblock %}
