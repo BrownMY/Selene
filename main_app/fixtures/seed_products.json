@@ -197,5 +197,18 @@
             "image": "https://images.saymedia-content.com/.image/t_share/MTc0NTAxMzUxODE5Mzg4OTE4/diy-bath-bomb-guide-and-7-inspiring-recipe-combinations.jpg"
         }
         
+    },
+    {
+        "model": "main_app.product",
+        "pk": 15,
+        "fields": {
+            "name": "Double Ended Jade Roller",
+            "price": 45,
+            "description": "For battling a puffy face, stimulating lymphatic drainage, and promoting blood circulation. A must have.",
+            "category": "calm",
+            "rating": 5,
+            "imgurl": "https://static.onecms.io/wp-content/uploads/sites/14/2018/01/25/030620-jade-roller-lead.jpg"
+        }
+        
     }
 ]

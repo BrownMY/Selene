@@ -1,17 +1,25 @@
-<!-- {% extends 'base.html' %}
+{% extends 'base.html' %}
 
 
 
 {% block content %}
-    <h1>{{ products.category }}</h1>
-    <p>hey</p>
-    {% for product in product %}
-       {% if product.category === product.category %} 
-        <p>{{ product.name }}</p>
-        <p>{{ product.category }}</p>
-       {% endif %}
-    {% endfor %}
-    <hr />
+    <p>{{ category.category }}</p>
+
+   {% for product in category %}
+        
+        <div class="prod-moodshow-div">
+            <img class="prod-mood-img" src="{{ product.imgurl }}"/>
+            <a href="/products/{{product.id}}">
+            <h4 class="">{{ product.name }}</h4></a>
+            <p>{{ product.description }}</p>
+            <p>${{ product.price }}</p>
 
 
-{% endblock %} -->
+
+            <hr/>
+        </div>
+    
+
+    {% endfor %} 
+
+{% endblock %}
