@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-
+{% load static %}
+{% static "" as baseurl %}
 
 {% load cart_tag %}
 
@@ -13,7 +13,7 @@ Items in Cart: {{request.session.cart|length}}
 {% for key,value in request.session.cart.items %}
     <div class="cart-prod">
         <p>Product: {{value.name}}</p>
-        <img src="{{value.image}}"/>
+        <img class="cart-image" src="{{baseurl}}{{value.image}}"/>
         <p>Price: {{value.price}}</p>
         <p>Quantity: {{value.quantity}}</p> 
         <p><a class="button" href="{% url 'item_decrement' value.product_id %}">-</a>     <a  class="button" href="{% url 'item_increment' value.product_id %}">+</a></p>

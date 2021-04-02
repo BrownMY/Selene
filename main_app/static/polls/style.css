@@ -190,9 +190,10 @@ img {
     float: left;
     width:  275px;
     height: 375px;
+    max-width: 275px;
+    max-height: 375px;
     object-fit: cover;
     margin: 0px 0px;
-    /* padding: 10px; */
 }
 
 .prod-index-ul {
@@ -294,11 +295,12 @@ a {
     width: 400px;
     border: 2px solid purple;
 }
+                      /* CART */
 
 .cart-prod {
     display: flex;
     justify-content: right;
-    flex-direction: column;
+    flex-direction: row;
     /* border-style: solid;
     border-color: lightgrey; */
     background-color: white;
@@ -307,6 +309,17 @@ a {
     width: 600px;
     font-size:larger;
 }
+
+.cart-image {
+    float: left;
+    width:  100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit:cover;
+    margin: 0px 0px;
+}
+
 .button {
     border-style: solid;
     border-radius: 9px;
@@ -339,6 +352,7 @@ a {
     color:rgb(138,96,207,1);
 } */
 
+                    /* FOOTER */
 footer {
     /* background-color: white; */
     height: 3%;
