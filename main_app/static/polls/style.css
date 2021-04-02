@@ -22,7 +22,7 @@ body {
     width: 70%;
     align-self: center;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.70);
+    background: rgba(255, 255, 255, 0.80);
     /* opacity: .7; */
 }
                     /* NAV BAR */
@@ -122,15 +122,14 @@ li {
     justify-content: center;
 }
 
-
+/* 
 img {
     float: left;
     width:  275px;
     height: 400px;
     object-fit: cover;
     margin: 2px 20px;
-    
-}
+} */
 
 .prod-index-page {
     display: grid;
@@ -188,33 +187,38 @@ img {
 
                     /* VIEW ALL PRODUCTS */
 .prod-index-img {
-    
-    max-width: 600px;
-    max-height: 600px;
+    float: left;
+    width:  275px;
+    height: 375px;
+    object-fit: cover;
+    margin: 0px 0px;
+    /* padding: 10px; */
 }
 
 .prod-index-ul {
     display: inline-flex;
     justify-content: center;
-    margin: 25px;
+    margin: 7.5px;
     padding: 0px;
     max-width: 350px;
     width: 300px;
-
+ 
 }
 
 .prod-index-li { 
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     max-width: 275px;
-    margin: 15px;
-    
+    margin: 20px;
+    background-color: white;
 }
 
 .prod-index-head{
     justify-content: center;
     display: flex;
     color:rgb(138,96,207,1);
+    background-color: white;
 }
 
 .prod-price-show {
@@ -238,8 +242,6 @@ img {
     width: 500px;
 }
 
-
-
 a {
     text-decoration: none;
 }
@@ -249,8 +251,14 @@ a {
 }
 
 .product_view{
-    color:orchid;
+    color: cornflowerblue;
 }
+.product_text{
+    padding: 0px;
+    margin: 4px;
+    height: 30px;
+}
+
 .home_selene{
     color:rgb1(70,126,185,1);
 }
@@ -288,8 +296,12 @@ a {
 }
 
 .cart-prod {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
     /* border-style: solid;
     border-color: lightgrey; */
+    background-color: white;
     margin: 5px;
     height: 270px;
     width: 600px;
@@ -298,11 +310,26 @@ a {
 .button {
     border-style: solid;
     border-radius: 9px;
-    border-color: lightgrey;
-    background-color: lightgrey;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
     padding: 5px 15px;
+    color: white;
+}
+.add_button {
+    border-style: solid;
+    border-radius: 4px;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    padding: 5px 10px;
+    color: white;
+    width: 150px;
+    align-self: center;
 }
 
+.add_button_text {
+    text-decoration: none;
+    color: white;
+}
 .checkout {
     margin: 0 500px;
 }
@@ -313,7 +340,7 @@ a {
 } */
 
 footer {
-    background-color: white;
+    /* background-color: white; */
     height: 3%;
     position: fixed;
     bottom: 0;

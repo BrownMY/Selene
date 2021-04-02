@@ -37,8 +37,8 @@
             "description": "Indulge your senses with these thirteen cute and carefully curated scented bath bombs meant to invigorate and destress your life.",
             "category": "indulge",
             "rating": 5,
-            "imgurl": "https://i.imgur.com/MJukatO.jpg",
-            "image": "https://i.imgur.com/MJukatO.jpg"
+            "imgurl": "https://i.imgur.com/pH40Bw7.jpg",
+            "image": "https://i.imgur.com/pH40Bw7.jpg"
             
             
         }
@@ -48,7 +48,7 @@
         "model": "main_app.product",
         "pk": 4,
         "fields": {
-            "name": "Australian exfoliating soap",
+            "name": "Australian Exfoliating Soap",
             "price": 18,
             "description": "Wavertree & London Sweet Pea and Jasmine Australian natural luxury soap bar 6oz",
             "category": "calm",
@@ -81,8 +81,8 @@
             "description": "A simple blend of Moroccan Rose Absolute essential oil, Rose-hip oil, mica.",
             "category": "romance",
             "rating": 3,
-            "imgurl": "https://i.imgur.com/rA02zy3.jpg",
-            "image": "https://i.imgur.com/rA02zy3.jpg"
+            "imgurl": "https://i.imgur.com/GET3Vrw.jpg",
+            "image": "https://i.imgur.com/GET3Vrw.jpg"
         }
         
     },
