@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 
- 
+
 
 {% block content %}
-<h3 class="affirmation">Affirmation: I acknowledge my own self-worth; my confidence is soaring.</h3>
+<h2 class="marquee"><span class="affirmation"> I acknowledge my own self-worth; my confidence is soaring.</span></h2>
 <h1 class="prod-index-head">Products</h1>
-<main class="prod-index-page">
+<ul class="prod-index-ul">
     
   
     {% for product in products %}
-      <div class="prod-index-div">
+      <li class="prod-index-li">
         <div class="img"><img class="prod-index-img" src="{{ product.imgurl }}"/></div>
          <a class="product_view" href="/products/{{product.id}}">
         <p>{{ product.name }}</p></a>
@@ -20,8 +20,8 @@
         <p><a href="{% url 'item_decrement' product.id %}">-</a></p> -->
       
      
-      </div>
-</main>
+        </li>
+</ul>
   
    
     {% endfor %}
