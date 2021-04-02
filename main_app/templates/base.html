@@ -2,50 +2,56 @@
 {% load cart_tag %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static '../static/polls/style.css' %}">
   <title>Selene</title>
-  
-  
+
+
 </head>
+
 <body>
   <header class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper">  
-       
+      <div class="nav-wrapper">
+
         <ul class="nav_list">
-          <h1 class="home_selene">Selene</h1>
+          <div class="home_selene">Selenê</div>
           <li class="home"><a href="{% url 'index'%}">Home</a></li>
-          <li><a class="nav" href="{% url 'about' %}">Selenê Team</a></li>
+          <li><a class="nav" href="{% url 'about' %}">Meet the Team</a></li>
           {% if user.is_authenticated %}
-            
-            <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li>
-            <li><a class="nav" href="{% url 'mood' %}">View by Mood</a></li>
-            <li><a class="nav" href="{% url 'cart' %}">View Cart</a></li>
-            <li><a class="nav" href="{% url 'logout' %}">Log out</a></li>
-            
-    
+
+          <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li>
+          <li><a class="nav" href="{% url 'mood' %}">View by Mood</a></li>
+          <li><a class="nav" href="{% url 'cart' %}">View Cart</a></li>
+          <li><a class="nav" href="{% url 'logout' %}">Log out</a></li>
+
+
           {% else %}
-            <li><a class="nav" href="{% url 'login' %}">Log in</a></li>
-            <li><a class="nav" href="{% url 'sign_up' %}">Sign up</a></li>
-            <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li>
+          <li><a class="nav" href="{% url 'login' %}">Log in</a></li>
+          <li><a class="nav" href="{% url 'sign_up' %}">Sign up</a></li>
+          <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li>
           {% endif %}
         </ul>
       </div>
     </nav>
-  </header>  
-  <div>
- {% block content%}
- {% endblock %}
-</div>
-  <footer class="page-footer">
+  </header>
+  <div class="background-container">
+    <div class="content">
+      
+      {% block content%}
+      {% endblock %}
+    </div>
+  </div>
+  <footer>
     <div class="right">All Rights Reserved, &copy; 2021 Selenê &nbsp;</div>
   </footer>
 
 </body>
+
 </html
