@@ -3,10 +3,15 @@
 
 
 {% block content %}
-    <h1>products by mood</h1>
-    <p>hey</p>
-    {{ product }}
+<h3 class="affirmation">Affirmation: I am at peace with all that has happened, is happening, and will happen.</h3>
+    <h2 class="mood-h2">products by mood</h2>
+    <ul class="main-mood-div">
 
+    {% for product in products %}
+        <li class="ind-mood-div"><a href="/products/mood/{{ product }}">{{ product }}</a></li>
+    {% endfor %}
+
+    </ul>
     <hr />
 
 

@@ -3,6 +3,7 @@
  
 
 {% block content %}
+<h3 class="affirmation">Affirmation: I acknowledge my own self-worth; my confidence is soaring.</h3>
 <h1 class="prod-index-head">Products</h1>
 <main class="prod-index-page">
     
@@ -10,10 +11,11 @@
     {% for product in products %}
       <div class="prod-index-div">
         <img class="prod-index-img" src="{{ product.imgurl }}"/>
-         <a href="/products/{{product.id}}">
+         <a class="product_view" href="/products/{{product.id}}">
         <p>{{ product.name }}</p></a>
         <p>{{ product.description }}</p>
         <p>${{ product.price }}</p>
+        <a class="add_cart" href="/cart">Add item to your cart</a>
         
         
       

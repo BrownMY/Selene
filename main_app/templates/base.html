@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static '../static/polls/style.css' %}">
   <title>Selene</title>
 
@@ -17,9 +18,9 @@
     <nav>
       <div class="nav-wrapper">  
        
-        
-        <ul>
-          <li class="selene"><a href="{% url 'index'%}">Selenê</a></li>
+        <ul class="nav_list">
+          <h1 class="home_selene">Selene</h1>
+          <li class="home"><a href="{% url 'index'%}">Home</a></li>
           <li><a class="nav" href="{% url 'about' %}">Selenê Team</a></li>
           {% if user.is_authenticated %}
             
@@ -47,4 +48,4 @@
   </footer>
 
 </body>
-</html>
+</html
