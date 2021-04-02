@@ -10,7 +10,7 @@
             "category": "sleep",
             "rating": 4,
             "imgurl": "https://i.imgur.com/weEKbia.jpg",
-            "image": "https://i.imgur.com/weEKbia.jpg"
+            "image": "/product_images/facemask.jpg"
         }
         
     },
@@ -24,7 +24,7 @@
             "category": "energize",
             "rating": 3,
             "imgurl": "https://i.imgur.com/vf5Vnn7.jpg",
-            "image": "https://i.imgur.com/weEKbia.jpg"
+            "image": "i.imgur.com/weEKbia.jpg"
         }
         
     },
@@ -37,8 +37,8 @@
             "description": "Indulge your senses with these thirteen cute and carefully curated scented bath bombs meant to invigorate and destress your life.",
             "category": "indulge",
             "rating": 5,
-            "imgurl": "https://i.imgur.com/MJukatO.jpg",
-            "image": "https://i.imgur.com/MJukatO.jpg"
+            "imgurl": "https://i.imgur.com/pH40Bw7.jpg",
+            "image": "i.imgur.com/pH40Bw7.jpg"
             
             
         }
@@ -48,13 +48,13 @@
         "model": "main_app.product",
         "pk": 4,
         "fields": {
-            "name": "Australian exfoliating soap",
+            "name": "Australian Exfoliating Soap",
             "price": 18,
             "description": "Wavertree & London Sweet Pea and Jasmine Australian natural luxury soap bar 6oz",
             "category": "calm",
             "rating": 4,
             "imgurl": "https://i.imgur.com/pExQx2d.jpg",
-            "image": "https://i.imgur.com/MJukatO.jpg"
+            "image": "i.imgur.com/pExQx2d.jpg"
         }
         
     },
@@ -68,7 +68,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.imgur.com/XSVkw30.jpg",
-            "image": "https://i.imgur.com/XSVkw30.jpg"
+            "image": "i.imgur.com/XSVkw30.jpg"
         }
         
     },
@@ -81,8 +81,8 @@
             "description": "A simple blend of Moroccan Rose Absolute essential oil, Rose-hip oil, mica.",
             "category": "romance",
             "rating": 3,
-            "imgurl": "https://i.imgur.com/rA02zy3.jpg",
-            "image": "https://i.imgur.com/rA02zy3.jpg"
+            "imgurl": "https://i.imgur.com/GET3Vrw.jpg",
+            "image": "i.imgur.com/GET3Vrw.jpg"
         }
         
     },
@@ -96,7 +96,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/RFCzXQS.jpg",
-            "image": "https://i.imgur.com/RFCzXQS.jpg"
+            "image": "i.imgur.com/RFCzXQS.jpg"
         }
         
     },
@@ -110,7 +110,7 @@
             "category": "romance",
             "rating": 5,
             "imgurl": "https://i.imgur.com/nM7xX7m.jpg",
-            "image": "https://i.imgur.com/nM7xX7m.jpg"
+            "image": "i.imgur.com/nM7xX7m.jpg"
         }
         
     },
@@ -124,7 +124,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/uulLmt6.jpg",
-            "image": "https://i.imgur.com/uulLmt6.jpg"
+            "image": "i.imgur.com/uulLmt6.jpg"
         }
         
     },
@@ -138,7 +138,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/Xyqq9Am.jpg",
-            "image":  "https://i.imgur.com/Xyqq9Am.jpg"
+            "image":  "i.imgur.com/Xyqq9Am.jpg"
         }
         
     },
@@ -152,7 +152,7 @@
             "category": "indulge",
             "rating": 4,
             "imgurl": "https://i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg",
-            "image": "https://i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg"
+            "image": "i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg"
         }
         
     },
@@ -166,7 +166,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683",
-            "image": "https://cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683"
+            "image": "cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683"
         }
         
     },
@@ -180,7 +180,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg",
-            "image": "https://i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg"
+            "image": "i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg"
         }
         
     },
@@ -207,7 +207,7 @@
             "description": "For battling a puffy face, stimulating lymphatic drainage, and promoting blood circulation. A must have.",
             "category": "calm",
             "rating": 5,
-            "imgurl": "https://static.onecms.io/wp-content/uploads/sites/14/2018/01/25/030620-jade-roller-lead.jpg"
+            "imgurl": "static.onecms.io/wp-content/uploads/sites/14/2018/01/25/030620-jade-roller-lead.jpg"
         }
         
     }
