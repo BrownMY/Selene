@@ -36,7 +36,7 @@ body {
     margin-top: 0;
     height: 50px;
     padding: 5px;
-    border-bottom: 5px solid rgb(138,96,207,1);
+    border-bottom: 5px solid #1e4376;
     color: black;
 }
 
@@ -89,7 +89,7 @@ li {
     display: inline-block;
     padding-left: 100%;
     color:rgb(138,96,207,1);
-    -webkit-animation:scroll 30s infinite;
+    -webkit-animation: scroll 30s infinite;
 }
 
                     /* LOGIN */
@@ -141,7 +141,7 @@ img {
     width: 600px;
     height: 170px;
     background: cornflowerblue;
-    border: 2px solid purple;
+    border: 2px solid #1e4376;
 }
 
 .left-ind {
@@ -150,7 +150,7 @@ img {
     height: 180px;
     width: 500px;
     margin: 10px 0px;
-    border: 2px solid purple;
+    border: 2px solid #1e4376;
 
 }
 
@@ -163,7 +163,7 @@ img {
     width: 500px;
     height: 565px;
     background: url('https://res.cloudinary.com/doihe1pi6/video/upload/v1617334054/pexels-artem-podrez-6801666_cajjhm.mp4');
-    border: 2px solid purple;
+    border: 2px solid #1e4376;
     overflow: hidden;
 }
 
