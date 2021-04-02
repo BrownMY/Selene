@@ -65,15 +65,16 @@ img {
 }
 
 .prod-index-page {
-    display: grid;
-    justify-content: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
 }
 
 .prod-index-div {
-    max-width: 300px;
     display: flex;
     flex-direction: column;
+    max-width: 300px;
 }
 .prod-index-head{
     justify-content: center;

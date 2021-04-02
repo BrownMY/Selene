@@ -5,9 +5,11 @@
 {% block content %}
     
     <h3 class="affirmation">Affirmation: I am in the process of being my best self.</h3>
-    <hr />
-    <a href="products/spotlight">Spotlight products</a>
-    <a class="nav" href="{% url 'mood' %}">View by Mood</a>
+    
+
+    <div class="view-all-index"><a href="products/index.html">view all products</a></div>
+    <div class="spotlight-index"><a href="products/spotlight">spotlight products</a></div>
+    <div class="mood-index"><a class="nav" href="{% url 'mood' %}">view by mood</a></div>
   
     
 
