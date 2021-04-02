@@ -12,7 +12,7 @@ Items in Cart: {{request.session.cart|length}}
 
 {% for key,value in request.session.cart.items %}
     <p>Product: {{value.name}}</p>
-    <img src={{value.imgurl}}/>
+    <img src="{{value.image}}"/>
     <p>Price: {{value.price}}</p>
     <p>Quantity: {{value.quantity}}</p>
     

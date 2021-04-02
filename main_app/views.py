@@ -61,9 +61,7 @@ def cart(request):
 def cart_add(request, product_id):
     cart = Cart(request)
     product = Product.objects.get(id=product_id)
-    print(product)
     cart.add(product=product)
-    print(cart)
     return redirect('cart')
 
 def item_clear(request, product_id):
@@ -91,22 +89,4 @@ def cart_clear(request):
 
 def cart_detail(request):
     return render(request, 'cart/cart_detail.html')
-
-
-
-# def calm(request):
-#     products = Product.objects.all()
-#     return render(request, 'products/calm.html', {'products': products})
-
-# def energize(request):
-#     return render(request, 'products/energize.html')
-
-# def indulge(request):
-#     return render(request, 'products/indulge.html')
-
-# def romance(request):
-#     return render(request, 'products/romance.html')
-
-# def sleep(request):
-#     return render(request, 'products/sleep.html')
 

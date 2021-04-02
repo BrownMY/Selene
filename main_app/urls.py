@@ -20,10 +20,5 @@ urlpatterns = [
          views.item_decrement, name='item_decrement'),
     path('cart/cart_clear/', views.cart_clear, name='cart_clear'),
     path('cart/cart-detail/',views.cart_detail,name='cart_detail'),
-    #   path('products/calm/', views.calm, name='calm'),
-    # path('products/energize/', views.energize, name='energize'),
-    # path('products/indulge/', views.indulge, name='indulge'),
-    # path('products/romance/', views.romance, name='romance'),
-    # path('products/sleep/', views.sleep, name='sleep'),
     
 ]
