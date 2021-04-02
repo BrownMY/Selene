@@ -12,7 +12,7 @@ body {
     height: 100%;
     min-height: 800px;
     background-attachment: fixed;
-    background-image: url("https://i.imgur.com/KshM5s9.jpg");
+    background-image: url("https://images.unsplash.com/photo-1527904248767-cfe951e81ab0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
     background-repeat: no-repeat;
 }
 
@@ -35,7 +35,7 @@ body {
     margin-top: 0;
     height: 50px;
     padding: 5px;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(138,96,207,1);
     color: black;
 }
 
@@ -111,8 +111,8 @@ img {
     width: 800px;
     flex-direction: column;
     padding: 5px;
-    border-style: solid;
-    border-color: lightgrey;
+    /* border-style: solid;
+    border-color: lightgrey; */
     margin: 5px;
     margin-left: 70px;
 }
@@ -173,8 +173,8 @@ a {
 }
 
 .cart-prod {
-    border-style: solid;
-    border-color: lightgrey;
+    /* border-style: solid;
+    border-color: lightgrey; */
     margin: 5px;
     height: 270px;
     width: 600px;
