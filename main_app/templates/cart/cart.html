@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+{% load cart_tag %}
+
+Items in Cart: {{request.session.cart|length}}
+
+<h3>Cart Details:</h3>
+
+{% for key,value in request.session.cart.items %}
+    <p>Product: {{value.name}}</p>
+    <img src={{value.imgurl}}/>
+    <p>Price: {{value.price}}</p>
+    <p>Quantity: {{value.quantity}}</p>
+    
+    <p>Product total: {{ value.price|multiply:value.quantity }}</p>
+    {% endfor %}
+
+{% endblock %}

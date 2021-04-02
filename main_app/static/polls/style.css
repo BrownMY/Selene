@@ -3,6 +3,9 @@ body {
    background-size:cover;
    background-repeat: no-repeat; 
 }
+* {
+    font-family: 'Raleway', sans-serif;
+}
 
 .nav-wrapper {
     background-color: lavender;
@@ -35,6 +38,29 @@ li {
     background-color:lavender;
     text-decoration: none;
     color:rgb(170,126,185,1);
+}
+
+.affirmation{
+    justify-content: center;
+    display: flex;
+    color:rgb(138,96,207,1);
+}
+
+.login{
+    justify-content: center;
+    display: flex;
+    color:rgb(138,96,207,1);
+}
+
+.signup{
+    justify-content: center;
+    display: flex;
+    color:rgb(138,96,207,1);
+}
+.team{
+    justify-content: center;
+    display: flex;
+    color:rgb(138,96,207,1);
 }
 
 img {
@@ -89,37 +115,32 @@ a{
     display: flex;
     color:rgb(138,96,207,1);
 }
-
-.affirmation{
+h2 {
     justify-content: center;
     display: flex;
     color:rgb(138,96,207,1);
-}
 
-.login{
-    justify-content: center;
-    display: flex;
-    color:rgb(138,96,207,1);
 }
 
-.signup{
-    justify-content: center;
+.main-mood-div {
+    margin: 0 180px 0 180px;
     display: flex;
-    color:rgb(138,96,207,1);
+    justify-content: space-around;
+    
 }
-.team{
+
+.ind-mood-div {
+    align-items: center;
     justify-content: center;
-    display: flex;
-    color:rgb(138,96,207,1);
+    height: 500px;
+    width: 200px;
+    border: 2px solid purple;
 }
+
 .cart{
     justify-content: center;
     display: flex;
     color:rgb(138,96,207,1);
 }
-.mood{
-    justify-content: center;
-    display: flex;
-    color:rgb(138,96,207,1);
-}
+
 

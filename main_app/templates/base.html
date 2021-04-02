@@ -1,11 +1,13 @@
 {% load static %}
+{% load cart_tag %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static '../static/polls/style.css' %}">
   <title>Selene</title>
   
@@ -23,8 +25,8 @@
           {% if user.is_authenticated %}
             
             <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li>
-            
-            <li><a class="nav" href="{% url 'cart' %}">View your cart</a></li>
+            <li><a class="nav" href="{% url 'mood' %}">View by Mood</a></li>
+            <li><a class="nav" href="{% url 'cart' %}">View Cart</a></li>
             <li><a class="nav" href="{% url 'logout' %}">Log out</a></li>
             
     
@@ -46,4 +48,4 @@
   </footer>
 
 </body>
-</html>
+</html

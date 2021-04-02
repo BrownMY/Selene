@@ -3,15 +3,15 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models import Product
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
+from cart.cart import Cart
 
 
 def index(request):
     return render(request, 'index.html')
 
-
 def about(request):
     return render(request, 'about.html')
-
 
 def sign_up(request):
     error_message = ''
@@ -48,7 +48,12 @@ def spotlight(request):
 
 def mood(request):
     products = Product.objects.all()
-    return render(request, 'products/mood.html', {'products': products})
+    mood_no_repeat = []
+    for product in products:
+        if product.category not in mood_no_repeat:
+            mood_no_repeat.append(product.category)
+    
+    return render(request, 'products/mood.html', {'products': mood_no_repeat})
 
 def mood_show(request, category):
     category = Product.objects.filter(category=category)
@@ -56,6 +61,50 @@ def mood_show(request, category):
     print('********', category)
     
     return render(request, 'products/mood_show.html', {'category': category})
+
+def cart(request):
+    return render(request, 'ecommerce/cart.html')
+
+
+def cart(request):
+    cart = Cart(request)
+    return render(request, 'cart/cart.html')
+
+def cart_add(request, product_id):
+    cart = Cart(request)
+    product = Product.objects.get(id=product_id)
+    print(product)
+    cart.add(product=product)
+    print(cart)
+    return redirect('cart')
+
+def item_clear(request, product_id):
+    cart = Cart(request)
+    product = Product.objects.get(product_id=product_id)
+    cart.remove(product)
+    return redirect("cart_detail")
+
+def item_increment(request, product_id):
+    cart = Cart(request)
+    product = Product.objects.get(product_id=product_id)
+    cart.add(product=product)
+    return redirect("cart_detail")
+
+def item_decrement(request, product_id):
+    cart = Cart(request)
+    product = Product.objects.get(product_id=product_id)
+    cart.decrement(product=product)
+    return redirect("cart_detail")
+
+def cart_clear(request):
+    cart = Cart(request)
+    cart.clear()
+    return redirect("cart_detail")
+
+def cart_detail(request):
+    return render(request, 'cart/cart_detail.html')
+
+
 
 # def calm(request):
 #     products = Product.objects.all()
@@ -67,9 +116,6 @@ def mood_show(request, category):
 # def indulge(request):
 #     return render(request, 'products/indulge.html')
 
-
-def cart(request):
-    return render(request, 'ecommerce/cart.html')
 
 # def romance(request):
 #     return render(request, 'products/romance.html')
