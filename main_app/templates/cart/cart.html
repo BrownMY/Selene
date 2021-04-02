@@ -14,9 +14,12 @@ Items in Cart: {{request.session.cart|length}}
     <p>Product: {{value.name}}</p>
     <img src="{{value.image}}"/>
     <p>Price: {{value.price}}</p>
-    <p>Quantity: {{value.quantity}}</p>
-    
+    <p>Quantity: {{value.quantity}}</p> 
+    <p><a href="{% url 'item_increment' value.product_id %}">+</a></p>
+    <p><a href="{% url 'item_decrement' value.product_id %}">-</a></p>
     <p>Product total: {{ value.price|multiply:value.quantity }}</p>
+    
     {% endfor %}
+    <p><a href="{% url 'cart_clear' %}">Clear Cart</a></p>
 
 {% endblock %}
