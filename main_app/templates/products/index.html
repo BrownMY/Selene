@@ -15,9 +15,9 @@
         <p>{{ product.name }}</p></a>
         <p>{{ product.description }}</p>
         <p>${{ product.price }}</p>
-        <a class="add_cart" href="/cart">Add item to your cart</a>
-        
-        
+        <p><a href="{% url 'cart_add' product.id %}">Add item to cart</a></p>
+        <p><a href="{% url 'item_increment' product.id %}">+</a></p>
+        <p><a href="{% url 'item_decrement' product.id %}">-</a></p>
       
         <hr/>
       </div>
