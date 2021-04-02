@@ -1,6 +1,7 @@
-* {
-   
-
+body {
+    background-color:white;
+   background-size:cover;
+   background-repeat: no-repeat; 
 }
 
 .nav-wrapper {
@@ -80,6 +81,8 @@ a{
 }
 .home_selene{
     color:rgb1(70,126,185,1);
+    
+    
 }
 .product_name{
     justify-content: center;
