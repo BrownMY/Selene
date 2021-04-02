@@ -48,7 +48,12 @@ def spotlight(request):
 
 def mood(request):
     products = Product.objects.all()
-    return render(request, 'products/mood.html', {'products': products})
+    mood_no_repeat = []
+    for product in products:
+        if product.category not in mood_no_repeat:
+            mood_no_repeat.append(product.category)
+    
+    return render(request, 'products/mood.html', {'products': mood_no_repeat})
 
 def mood_show(request, category):
     category = Product.objects.filter(category=category)
@@ -56,6 +61,10 @@ def mood_show(request, category):
     print('********', category)
     
     return render(request, 'products/mood_show.html', {'category': category})
+
+def cart(request):
+    return render(request, 'ecommerce/cart.html')
+
 
 # def calm(request):
 #     products = Product.objects.all()
@@ -67,9 +76,6 @@ def mood_show(request, category):
 # def indulge(request):
 #     return render(request, 'products/indulge.html')
 
-
-def cart(request):
-    return render(request, 'ecommerce/cart.html')
 
 # def romance(request):
 #     return render(request, 'products/romance.html')
