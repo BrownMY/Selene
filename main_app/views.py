@@ -73,54 +73,31 @@ def cart(request):
 def cart_add(request, product_id):
     cart = Cart(request)
     product = Product.objects.get(id=product_id)
-    print(product)
     cart.add(product=product)
-    print(cart)
     return redirect('cart')
 
 def item_clear(request, product_id):
     cart = Cart(request)
-    product = Product.objects.get(product_id=product_id)
+    product = Product.objects.get(id=product_id)
     cart.remove(product)
-    return redirect("cart_detail")
+    return redirect("cart")
 
 def item_increment(request, product_id):
     cart = Cart(request)
-    product = Product.objects.get(product_id=product_id)
+    product = Product.objects.get(id=product_id)
     cart.add(product=product)
-    return redirect("cart_detail")
+    return redirect("cart")
 
 def item_decrement(request, product_id):
     cart = Cart(request)
-    product = Product.objects.get(product_id=product_id)
+    product = Product.objects.get(id=product_id)
     cart.decrement(product=product)
-    return redirect("cart_detail")
+    return redirect("cart")
 
 def cart_clear(request):
     cart = Cart(request)
     cart.clear()
-    return redirect("cart_detail")
+    return redirect("cart")
 
 def cart_detail(request):
     return render(request, 'cart/cart_detail.html')
-
-
-
-# def calm(request):
-#     products = Product.objects.all()
-#     return render(request, 'products/calm.html', {'products': products})
-
-# def energize(request):
-#     return render(request, 'products/energize.html')
-
-# def indulge(request):
-#     return render(request, 'products/indulge.html')
-
-
-# def romance(request):
-#     return render(request, 'products/romance.html')
-
-
-# def sleep(request):
-#     return render(request, 'products/sleep.html')
-

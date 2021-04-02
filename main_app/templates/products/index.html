@@ -6,26 +6,25 @@
 <h2 class="marquee"><span class="affirmation"> I acknowledge my own self-worth; my confidence is soaring.</span></h2>
 <h1 class="prod-index-head">Products</h1>
 <ul class="prod-index-ul">
-
-
-  {% for product in products %}
-  <li class="prod-index-li">
-    <div class="img-div"></div><img id="prod-index-img" src="{{ product.imgurl }}" /></div>
-    <a class="product_view" href="/products/{{product.id}}">
-      <p>{{ product.name }}</p>
-    </a>
-    <p class="p-tag">{{ product.description }}</p>
-    <p>${{ product.price }}</p>
-    <a class="add_cart" href="/cart">Add item to your cart</a>
-
-
-
-
-  </li>
+    
+  
+    {% for product in products %}
+      <li class="prod-index-li">
+        <div class="img"><img class="prod-index-img" src="{{ product.imgurl }}"/></div>
+         <a class="product_view" href="/products/{{product.id}}">
+        <p>{{ product.name }}</p></a>
+        <p>{{ product.description }}</p>
+        <p>${{ product.price }}</p>
+        <p><a href="{% url 'cart_add' product.id %}">Add item to cart</a></p>
+        <!-- <p><a href="{% url 'item_increment' product.id %}">+</a></p>
+        <p><a href="{% url 'item_decrement' product.id %}">-</a></p> -->
+      
+     
+        </li>
 </ul>
-
-
-{% endfor %}
+  
+   
+    {% endfor %}
 
 
 {% endblock %}
