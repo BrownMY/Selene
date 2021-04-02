@@ -92,9 +92,6 @@ li {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    padding:5px;
-    color: white;
-    font-size: 25px;
     flex-direction: column;
     width: 600px;
     height: 170px;
@@ -109,27 +106,9 @@ li {
     margin: 10px;
     flex-direction: column;
     width: 500px;
-    height: 565px;
-    background: url('https://res.cloudinary.com/doihe1pi6/video/upload/v1617334054/pexels-artem-podrez-6801666_cajjhm.mp4');
+    height: 540px;
+    background: cornflowerblue;
     border: 2px solid purple;
-    overflow: hidden;
-}
-
-.spotlight-index {
-    position:absolute;
-    color: white;
-    font-size: 30px;
-    padding: 5px;
-    font-weight: 400;
-    z-index: 1;
-}
-
-#overlay-index:hover {
-    position:absolute;
-    color: white;
-    background-color: rgba(116, 28, 21, 0.42);
-    font-weight: 400;
-    z-index: 1;
 }
 
                     /* VIEW ALL PRODUCTS */

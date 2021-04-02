@@ -1,17 +1,37 @@
-
-
 {% extends 'base.html' %}
 
 {% block content %}
-    
-    <h3 class="affirmation">Affirmation: I am in the process of being my best self.</h3>
-    
 
-    <div class="view-all-index"><a href="products/index.html">view all products</a></div>
-    <div class="spotlight-index"><a href="products/spotlight">spotlight products</a></div>
-    <div class="mood-index"><a class="nav" href="{% url 'mood' %}">view by mood</a></div>
-  
-    
+<h3 class="marquee"><span class="affirmation"> I am in the process of being my best self.</span></h3>
 
-    {% endblock %}
-    
+<main class="homepage-main">
+    <div class="left-index">
+        <a href="/products">
+            <div class="left-ind" id="view-all-index">view all products</div>
+        </a>
+        <a class="nav" href="{% url 'mood' %}">
+            <div class="left-ind" id="mood-index">view by mood</div>
+        </a>
+        <a href="/about">
+            <div class="left-ind" id="picks-index">Our picks</div>
+        </a>
+    </div>
+    <a href="products/spotlight">
+        <div class="right-spotlight-index">
+            <div class="spotlight-index" id="overlay-index">spotlight products</div>
+            <video controls width="100%" height="auto" loop onmouseover="this.play()" >
+                <source
+                    src="https://res.cloudinary.com/doihe1pi6/video/upload/v1617334054/pexels-artem-podrez-6801666_cajjhm.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+    </a>
+</main>
+
+
+<source
+    src="https://res.cloudinary.com/doihe1pi6/video/upload/vc_auto/v1617333993/pexels-cup-of-couple-6633112_wg5glf.mp4"
+    type="video/mp4">
+
+
+{% endblock %}
