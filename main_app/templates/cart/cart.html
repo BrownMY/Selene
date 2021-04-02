@@ -22,5 +22,6 @@ Items in Cart: {{request.session.cart|length}}
     </div>
         {% endfor %}
     <p><a href="{% url 'cart_clear' %}">Clear Cart</a></p>
+    <button class="checkout">Checkout</button>
 
 {% endblock %}

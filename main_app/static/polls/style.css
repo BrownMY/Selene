@@ -187,6 +187,10 @@ a {
     background-color: lightgrey;
     padding: 5px 15px;
 }
+
+.checkout {
+    margin: 0 500px;
+}
 /* .cart{
     justify-content: center;
     display: flex;
