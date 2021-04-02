@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h3 class="affirmation">Affirmation: My body is healthy; my mind is brilliant; my soul is tranquil.</h3>
+<h1 class="login">Log in</h1>
+<form method='post' action="{% url 'login' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" class="btn" value="login">
+    <input type="hidden" name="next" value="{{ next }}">
+</form>
+
+{% endblock %}

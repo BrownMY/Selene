@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <p>{{ category.category }}</p>
+
+   {% for product in category %}
+        
+        <div class="prod-moodshow-div">
+            <img class="prod-mood-img" src="{{ product.imgurl }}"/>
+            <a href="/products/{{product.id}}">
+            <h4 class="">{{ product.name }}</h4></a>
+            <p>{{ product.description }}</p>
+            <p>${{ product.price }}</p>
+
+
+
+            <hr/>
+        </div>
+    
+
+    {% endfor %} 
+
+{% endblock %}
