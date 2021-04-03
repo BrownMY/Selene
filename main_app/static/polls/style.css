@@ -378,6 +378,17 @@ footer {
         /* LOGIN */
 
 form{
-    margin-left: 200px;
+    margin-left: 450px;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn{
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    margin-left: 125px;
+}
+.helptext{
+    
 }
