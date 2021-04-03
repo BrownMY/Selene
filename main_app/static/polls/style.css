@@ -235,7 +235,6 @@ li {
 
 .div-spotlight {
     position: relative;
-    text-align: center;
     left: -800px;
     width: 600px;
     height: 1200px;
@@ -249,28 +248,35 @@ li {
     display: flex;
     position: relative;
     margin-right: -200px;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: rotate(90deg);
-    /* transform-origin: right top; */
-    width: -200px;
-    height: 350px;
-    margin: 50px;
+    transform-origin: right top;
+    /* width: -200px; */
+    height: 550px;
+    margin: -150px 20px;
+    object-fit: cover;
+    
     
 }
 
-.img-container-spot {
+.vid-container-spot {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 375px;
+    height: 750px;
+    float: left;
+    overflow: hidden;
   
 }
 
-.img-spotlight {
+.vid-spotlight {
     width: 375px;
     height: 650px;
-    object-fit: fill;
+    object-fit: cover;
     float: left;
     
 }
@@ -280,6 +286,11 @@ li {
     align-items: center;
     z-index: 1;
 
+}
+
+.spotlight-prod-descrip {
+    font-size: 16px;
+    width: 350px;
 }
 
 a {

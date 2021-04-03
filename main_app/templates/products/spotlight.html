@@ -9,8 +9,8 @@
         {% for product in products %}
             {% if product.rating == 5 %}
             <div class="ind-prod-spotlight">
-                <div class="img-conatiner-spot">
-                    <video controls width="100%" height="auto" loop onmouseover="this.play()" >
+                <div class="vid-container-spot">
+                    <video class="vid-spotlight" width="375px" height="650px" object-fit="cover" loop onmouseover="this.play()" onmouseout="this.pause()">
                         <source
                             src="{{ product.vidurl }}"
                             type="video/mp4">
@@ -19,6 +19,7 @@
                 <a href="/products/{{product.id}}">
                     <p class="">{{ product.name }}</p>
                 </a>
+                    <p class="spotlight-prod-descrip">{{ product.description }}</p>
             </div>
 
 
