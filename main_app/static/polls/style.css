@@ -42,11 +42,7 @@ body {
     margin-top: 0;
     height: 50px;
     padding: 5px;
-<<<<<<< HEAD
     border-bottom: 5px solid #1e4376;
-=======
-    border-bottom: 5px solid black;
->>>>>>> 7df324c31b0c668435d36e96ab7ae9ea1c84718d
     color: black;
 }
 
@@ -100,12 +96,8 @@ li {
 .affirmation{
     display: inline-block;
     padding-left: 100%;
-<<<<<<< HEAD
     font-weight: 300;
     color:#1e4376;
-=======
-    color: cornflowerblue;
->>>>>>> 7df324c31b0c668435d36e96ab7ae9ea1c84718d
     -webkit-animation:scroll 40s infinite;
 }
 
@@ -137,7 +129,6 @@ li {
     justify-content: center;
 }
 
-<<<<<<< HEAD
 
 .img {
     float: left;
@@ -148,8 +139,6 @@ li {
     
 }
 
-=======
->>>>>>> 7df324c31b0c668435d36e96ab7ae9ea1c84718d
 .prod-index-page {
     display: grid;
     align-items: center;
@@ -206,13 +195,9 @@ li {
 }
 
                     /* VIEW ALL PRODUCTS */
-<<<<<<< HEAD
-
-=======
 .prod-container {
     position: relative;
 }
->>>>>>> 7df324c31b0c668435d36e96ab7ae9ea1c84718d
 
 .prod-index-img {
     display: block;
@@ -347,7 +332,6 @@ li {
     
 }
 
-<<<<<<< HEAD
 .p-spotlight {
     display: flex;
     align-items: center;
@@ -360,8 +344,6 @@ li {
     width: 350px;
 }
 
-=======
->>>>>>> 7df324c31b0c668435d36e96ab7ae9ea1c84718d
 a {
     text-decoration: none;
 }
