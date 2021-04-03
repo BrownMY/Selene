@@ -24,7 +24,7 @@
             "category": "energize",
             "rating": 3,
             "imgurl": "https://i.imgur.com/vf5Vnn7.jpg",
-            "image": "i.imgur.com/weEKbia.jpg"
+            "image": "product_images/caffeineserum.jpg"
         }
         
     },
@@ -38,7 +38,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.imgur.com/pH40Bw7.jpg",
-            "image": "i.imgur.com/pH40Bw7.jpg"
+            "image": "product_images/bathbomb1.jpg"
             
             
         }
@@ -54,7 +54,7 @@
             "category": "calm",
             "rating": 4,
             "imgurl": "https://i.imgur.com/pExQx2d.jpg",
-            "image": "i.imgur.com/pExQx2d.jpg"
+            "image": "product_images/exfoliatingsoap.jpg"
         }
         
     },
@@ -68,7 +68,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.imgur.com/XSVkw30.jpg",
-            "image": "i.imgur.com/XSVkw30.jpg"
+            "image": "product_images/clearskinkit.jpeg"
         }
         
     },
@@ -82,7 +82,7 @@
             "category": "romance",
             "rating": 3,
             "imgurl": "https://i.imgur.com/GET3Vrw.jpg",
-            "image": "i.imgur.com/GET3Vrw.jpg"
+            "image": "product_images/sealant.jpg"
         }
         
     },
@@ -96,7 +96,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/RFCzXQS.jpg",
-            "image": "i.imgur.com/RFCzXQS.jpg"
+            "image": "product_images/pinkpetalmoisturizer.jpg"
         }
         
     },
@@ -110,7 +110,7 @@
             "category": "romance",
             "rating": 5,
             "imgurl": "https://i.imgur.com/nM7xX7m.jpg",
-            "image": "i.imgur.com/nM7xX7m.jpg"
+            "image": "product_images/pinkpetaloil.jpg"
         }
         
     },
@@ -124,7 +124,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/uulLmt6.jpg",
-            "image": "i.imgur.com/uulLmt6.jpg"
+            "image": "product_images/pinkpetalbalm.jpg"
         }
         
     },
@@ -138,7 +138,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/Xyqq9Am.jpg",
-            "image":  "i.imgur.com/Xyqq9Am.jpg"
+            "image":  "product_images/pinkpetalmask.jpg"
         }
         
     },
@@ -152,7 +152,7 @@
             "category": "indulge",
             "rating": 4,
             "imgurl": "https://i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg",
-            "image": "i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg"
+            "image": "product_images/soap2"
         }
         
     },
@@ -166,7 +166,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683",
-            "image": "cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683"
+            "image": "product_images/bathbomb2"
         }
         
     },
@@ -180,7 +180,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg",
-            "image": "i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg"
+            "image": "product_images/lemonsoap.jpg"
         }
         
     },
@@ -194,7 +194,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://images.saymedia-content.com/.image/t_share/MTc0NTAxMzUxODE5Mzg4OTE4/diy-bath-bomb-guide-and-7-inspiring-recipe-combinations.jpg",
-            "image": "https://images.saymedia-content.com/.image/t_share/MTc0NTAxMzUxODE5Mzg4OTE4/diy-bath-bomb-guide-and-7-inspiring-recipe-combinations.jpg"
+            "image": "product_images/bathbomb3.jpg"
         }
         
     },
@@ -207,7 +207,8 @@
             "description": "For battling a puffy face, stimulating lymphatic drainage, and promoting blood circulation. A must have.",
             "category": "calm",
             "rating": 5,
-            "imgurl": "static.onecms.io/wp-content/uploads/sites/14/2018/01/25/030620-jade-roller-lead.jpg"
+            "imgurl": "static.onecms.io/wp-content/uploads/sites/14/2018/01/25/030620-jade-roller-lead.jpg",
+            "image": "product_images/jade-roller.jpeg"
         }
         
     }
