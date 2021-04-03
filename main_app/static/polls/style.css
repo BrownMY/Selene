@@ -25,12 +25,7 @@ body {
 
 .content {
     position: relative;
-<<<<<<< HEAD
-    /* height: 800px; */
     width: 1000px;
-=======
-    width: 80%
->>>>>>> 7df324c31b0c668435d36e96ab7ae9ea1c84718d
     align-self: center;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.80);
@@ -47,7 +42,7 @@ body {
     margin-top: 0;
     height: 50px;
     padding: 5px;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(120, 186, 224);
     color: black;
 }
 
