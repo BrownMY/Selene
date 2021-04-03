@@ -10,6 +10,7 @@
             "category": "sleep",
             "rating": 4,
             "imgurl": "https://i.imgur.com/weEKbia.jpg",
+            "vidurl": "https://res.cloudinary.com/doihe1pi6/video/upload/v1617334126/production_ID_4154503_irr11s.mp4",
             "image": "/product_images/facemask.jpg"
         }
         
@@ -24,6 +25,7 @@
             "category": "energize",
             "rating": 3,
             "imgurl": "https://i.imgur.com/vf5Vnn7.jpg",
+            "vidurl":"na",
             "image": "product_images/caffeineserum.jpg"
         }
         
@@ -37,6 +39,7 @@
             "description": "Indulge your senses with these thirteen cute and carefully curated scented bath bombs meant to invigorate and destress your life.",
             "category": "indulge",
             "rating": 5,
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617406839/pexels-rodnae-productions-6724612_r2cgej.mp4",
             "imgurl": "https://i.imgur.com/pH40Bw7.jpg",
             "image": "product_images/bathbomb1.jpg"
             
@@ -54,6 +57,7 @@
             "category": "calm",
             "rating": 4,
             "imgurl": "https://i.imgur.com/pExQx2d.jpg",
+            "vidurl": "na",
             "image": "product_images/exfoliatingsoap.jpg"
         }
         
@@ -68,6 +72,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.imgur.com/XSVkw30.jpg",
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617334069/production_ID_4612264_i2w4pp.mp4",
             "image": "product_images/clearskinkit.jpeg"
         }
         
@@ -81,6 +86,7 @@
             "description": "A simple blend of Moroccan Rose Absolute essential oil, Rose-hip oil, mica.",
             "category": "romance",
             "rating": 3,
+            "vidurl":"na",
             "imgurl": "https://i.imgur.com/GET3Vrw.jpg",
             "image": "product_images/sealant.jpg"
         }
@@ -96,6 +102,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/RFCzXQS.jpg",
+            "vidurl":"na",
             "image": "product_images/pinkpetalmoisturizer.jpg"
         }
         
@@ -110,6 +117,7 @@
             "category": "romance",
             "rating": 5,
             "imgurl": "https://i.imgur.com/nM7xX7m.jpg",
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617334029/pexels-pavel-danilyuk-6446052_edyopr.mp4",
             "image": "product_images/pinkpetaloil.jpg"
         }
         
@@ -124,6 +132,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/uulLmt6.jpg",
+            "vidurl":"na",
             "image": "product_images/pinkpetalbalm.jpg"
         }
         
@@ -138,6 +147,7 @@
             "category": "romance",
             "rating": 4,
             "imgurl": "https://i.imgur.com/Xyqq9Am.jpg",
+            "vidurl":"na",
             "image":  "product_images/pinkpetalmask.jpg"
         }
         
@@ -152,6 +162,7 @@
             "category": "indulge",
             "rating": 4,
             "imgurl": "https://i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg",
+            "vidurl":"na",
             "image": "product_images/soap2"
         }
         
@@ -166,6 +177,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683",
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617406904/production_ID_4155512_zayryd.mp4",
             "image": "product_images/bathbomb2"
         }
         
@@ -180,6 +192,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg",
+            "vidurl": "https://res.cloudinary.com/doihe1pi6/video/upload/v1617406886/pexels-gabby-k-6845761_f1vv7l.mp4",
             "image": "product_images/lemonsoap.jpg"
         }
         
@@ -194,6 +207,7 @@
             "category": "indulge",
             "rating": 5,
             "imgurl": "https://images.saymedia-content.com/.image/t_share/MTc0NTAxMzUxODE5Mzg4OTE4/diy-bath-bomb-guide-and-7-inspiring-recipe-combinations.jpg",
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617406855/pexels-vlada-karpovich-6708113_up7nwj.mp4",
             "image": "product_images/bathbomb3.jpg"
         }
         
@@ -207,6 +221,7 @@
             "description": "For battling a puffy face, stimulating lymphatic drainage, and promoting blood circulation. A must have.",
             "category": "calm",
             "rating": 5,
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617333993/pexels-cup-of-couple-6633112_wg5glf.mp4",
             "imgurl": "https://i.imgur.com/H31fMuu.jpg",
             "image": "product_images/jade-roller.jpeg"
         }
