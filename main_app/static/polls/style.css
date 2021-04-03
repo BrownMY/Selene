@@ -332,6 +332,10 @@ footer {
   }
 
             /* ABOUT PAGE */
+.bio {
+    width: 350px;
+    height: 800px;
+}
 
 .bio-img{
     width: 100%;
@@ -350,7 +354,8 @@ footer {
     border-radius: 50%;
     margin-left: 30px;
     margin-bottom: 50px;
-    margin-right:30px
+    margin-right:30px;
+    background-color: black;
     
 }
 
@@ -362,7 +367,13 @@ footer {
 
 .bio-about{
    font-size:15px;
-  
+  height: 900px;
+}
+
+.bio-text {
+    height: 500px;
+    width: 300px;
+    margin: 0px 20px;
 }
 
 .team{
@@ -371,9 +382,7 @@ footer {
     color:rgb(138,96,207,1);
     
 }
-.bio{
-   
-}
+
 
         /* LOGIN */
 
