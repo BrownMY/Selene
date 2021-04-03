@@ -90,7 +90,7 @@ li {
 .affirmation{
     display: inline-block;
     padding-left: 100%;
-    color:rgb(138,96,207,1);
+    color: cornflowerblue;
     -webkit-animation:scroll 40s infinite;
 }
 
@@ -98,21 +98,21 @@ li {
 .login{
     justify-content: center;
     display: flex;
-    color:rgb(138,96,207,1);
+    color:cornflowerblue;
 }
 
                     /* SIGN-UP */
 .signup{
     justify-content: center;
     display: flex;
-    color:rgb(138,96,207,1);
+    color:cornflowerblue;
 }
                     /* TEAM */
 
 .team{
     justify-content: center;
     display: flex;
-    color:rgb(138,96,207,1);
+    color:cornflowerblue;
 }
 
                     /* HOMEPAGE STYLING */
@@ -186,7 +186,12 @@ img {
 }
 
                     /* VIEW ALL PRODUCTS */
+.prod-container {
+    position: relative;
+}
+
 .prod-index-img {
+    display: block;
     float: left;
     width:  275px;
     height: 375px;
@@ -194,6 +199,37 @@ img {
     max-height: 375px;
     object-fit: cover;
     margin: 0px 0px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5 ease;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    /* transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%); */
+    text-align: center;
+}
+
+.prod-container:hover .prod-index-img {
+    opacity: 0.3;
+}
+
+.prod-container:hover .middle {
+    opacity: 1;
+}
+
+.prod-description {
+    background-color: rgb(0, 0, 0, .5);
+    color: white;
+    height: 250px;
+    width: 175px;
+    padding: 20px 20px;
 }
 
 .prod-index-ul {
@@ -218,8 +254,9 @@ img {
 .prod-index-head{
     justify-content: center;
     display: flex;
-    color:rgb(138,96,207,1);
+    color:cornflowerblue;
     background-color: white;
+    padding: 15px;
 }
 
 .prod-price-show {
@@ -296,18 +333,23 @@ a {
     border: 2px solid purple;
 }
                       /* CART */
+.cart-container {
+    display: flex;
+    justify-content: right;
+}
 
 .cart-prod {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-direction: row;
-    /* border-style: solid;
-    border-color: lightgrey; */
+    /* border-style: solid; */
+    /* border-color: cornflowerblue; */
     background-color: white;
-    margin: 5px;
-    height: 270px;
-    width: 600px;
-    font-size:larger;
+    margin: 15px;
+    padding: 15px;
+    height: 150px;
+    width: 900px;
+    text-align: left;
 }
 
 .cart-image {
@@ -317,15 +359,18 @@ a {
     max-width: 100px;
     max-height: 100px;
     object-fit:cover;
-    margin: 0px 0px;
+    margin: 10px 20px;
 }
 
 .button {
+    display: inline-flex;
+    flex-direction: row;
     border-style: solid;
     border-radius: 9px;
     border-color: cornflowerblue;
     background-color: cornflowerblue;
-    padding: 5px 15px;
+    padding: 5px 10px;
+    margin: 0px 5px;
     color: white;
 }
 .add_button {
@@ -334,6 +379,7 @@ a {
     border-color: cornflowerblue;
     background-color: cornflowerblue;
     padding: 5px 10px;
+    margin: 10px 10px;
     color: white;
     width: 150px;
     align-self: center;

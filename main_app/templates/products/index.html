@@ -10,7 +10,16 @@
   
     {% for product in products %}
       <li class="prod-index-li">
-        <div class="img"><img class="prod-index-img" src="{{ product.imgurl }}"/></div>
+        <div class="prod-container">
+          <div class="img">
+            <img class="prod-index-img" src="{{ product.imgurl }}"/>
+          </div>
+         <div class="middle">
+           <div class="prod-description"> 
+             {{ product.description }}
+           </div>
+          </div>
+        </div>
          <a class="product_view" href="/products/{{product.id}}">
         <p class="product_text">{{ product.name }}</p></a>
         <p class="product_text">${{ product.price }}</p>
