@@ -2,26 +2,30 @@
 
 {% block content %}
 
-
+<h2 class=marquee><span class="affirmation">I give myself the care and attention that I deserve.</span></h2>
+{% load static %}
+{% static "" as baseurl %}
 
 {% load cart_tag %}
 
 Items in Cart: {{request.session.cart|length}}
 
 <h3>Cart Details:</h3>
-
-{% for key,value in request.session.cart.items %}
+<div class="cart_container">
+    
+    {% for key,value in request.session.cart.items %}
     <div class="cart-prod">
-        <p>Product: {{value.name}}</p>
-        <img src="{{value.image}}"/>
+        <p>{{value.name}}</p>
+        <img class="cart-image" src="{{baseurl}}{{value.image}}"/>
         <p>Price: {{value.price}}</p>
         <p>Quantity: {{value.quantity}}</p> 
-        <p><a class="button" href="{% url 'item_decrement' value.product_id %}">-</a>     <a  class="button" href="{% url 'item_increment' value.product_id %}">+</a></p>
+        <p> <a class="button" href="{% url 'item_decrement' value.product_id %}">-</a> <a  class="button" href="{% url 'item_increment' value.product_id %}">+</a>   </p>
         <p>Product total: {{ value.price|multiply:value.quantity }}</p>
         
     </div>
-        {% endfor %}
+    {% endfor %}
     <p><a href="{% url 'cart_clear' %}">Clear Cart</a></p>
     <button class="checkout">Checkout</button>
+</div>
 
 {% endblock %}
