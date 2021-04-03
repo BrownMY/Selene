@@ -65,7 +65,6 @@ def mood_show(request, category):
 def cart(request):
     return render(request, 'ecommerce/cart.html')
 
-
 def cart(request):
     cart = Cart(request)
     return render(request, 'cart/cart.html')
