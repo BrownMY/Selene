@@ -371,9 +371,7 @@ footer {
     color:rgb(138,96,207,1);
     
 }
-.bio{
-   
-}
+
 
         /* LOGIN */
 
@@ -382,13 +380,12 @@ form{
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    height:500px;
 }
 .btn{
     justify-content: center;
     align-items:center;
     display:flex;
     margin-left: 125px;
-}
-.helptext{
-    
+    margin-bottom:100px;
 }
