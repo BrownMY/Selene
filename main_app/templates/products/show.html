@@ -1,19 +1,29 @@
 {% extends 'base.html' %}
+
 {% block content %}
-<h3 class="affirmation">Affirmation: I radiate beauty, charm, and grace. </h3>
+<h2 class="marquee"><span class="affirmation">I radiate beauty, charm, and grace.</span></h2>
 <h1 class="product_name">{{ product.name }}</h1>
 
 
-<p class="prod-descrip-show"> about {{ product.name }} <br /> {{ product.description }}</p>
+<div class = "show-page-div">
 <div class="prod-img-box-show">
-    <img clas="prod-index-img" src='{{ product.imgurl }}'/>
+    <img class="prod-img-show" src='{{ product.imgurl }}'/>
+</div>
+<!-- <h1 class="product_name">{{ product.name }}</h1> -->
+<div class="prod-show-info">
+    <p class="prod-descrip-show"> {{ product.description }}</p>
+    <div class="prod-show-misc">
     <p class="prod-price-show">${{ product.price }}0</p>  
     <p class="prod-rating-show">rating: {{ product.rating }}</p>    
     <p class="prod-mood-show">mood: <a href="/products/mood/{{ product.category }}">{{ product.category }}</a></p>  
-    <p><a href="{% url 'cart_add' product.id %}">Add To Cart</a></p>  
+    <p><a class="add_button" href="{% url 'cart_add' product.id %}">Add To Cart</a></p>  
     <p><a href="{% url 'item_increment' product.id %}">+</a></p>
     <p><a href="{% url 'item_decrement' product.id %}">-</a></p>
-    <p><a href="{% url 'cart_clear' %}">Clear Cart</a></p>
+    <p><a class="add_button" href="{% url 'cart_clear' %}">Clear Cart</a></p>
+</div>
+   
+</div>
 </div>
 <hr/>
+</div>
 {% endblock %}
