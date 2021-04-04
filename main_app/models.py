@@ -14,10 +14,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-    def save(self, *args, **kwargs):
-        self.my_float = round(self.my_float, 2)
-        super(MyDataModel, self).save(*args, **kwargs)    
         
 class Invoice(models.Model):
     

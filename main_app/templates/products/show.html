@@ -7,7 +7,7 @@
 <p class="prod-descrip-show"> about {{ product.name }} <br /> {{ product.description }}</p>
 <div class="prod-img-box-show">
     <img clas="prod-index-img" src='{{ product.imgurl }}'/>
-    <p class="prod-price-show">${{ product.price }}</p>  
+    <p class="prod-price-show">${{ product.price }}0</p>  
     <p class="prod-rating-show">rating: {{ product.rating }}</p>    
     <p class="prod-mood-show">mood: <a href="/products/mood/{{ product.category }}">{{ product.category }}</a></p>  
     <p><a href="{% url 'cart_add' product.id %}">Add To Cart</a></p>  
