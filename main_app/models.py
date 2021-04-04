@@ -10,10 +10,14 @@ class Product(models.Model):
     category = models.CharField(max_length=100)
     rating = models.IntegerField()
     imgurl = models.CharField(max_length=250)
-    
+    vidurl = models.CharField(max_length=250)
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        self.my_float = round(self.my_float, 2)
+        super(MyDataModel, self).save(*args, **kwargs)    
         
 class Invoice(models.Model):
     

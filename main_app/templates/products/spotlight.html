@@ -2,23 +2,31 @@
 
 {% block content %}
 <h2 class=marquee><span class="affirmation">I listen to my intuition and trust my inner guide.</span></h2>
+<div class="spotlight-container">
     <h2 class="spotlight-h2">spotlight products</h2>
-    <p>our best rated products</p>
+    
 
-    <ul class="div-spotlight">
-
+    <div class="div-spotlight">
         {% for product in products %}
             {% if product.rating == 5 %}
-                <li class="ind-prod-spotlight">
-                    <a href="/products/{{product.id}}">
-                        <p>{{ product.name }}</p>
-                    </a>
-                    <img class="img-spotlight" src="{{ product.imgurl }}">
-                <li>
-                
-            </ul>
-    <hr />
+            <div class="ind-prod-spotlight">
+                <div class="vid-container-spot">
+                    <video class="vid-spotlight" width="375px" height="650px" object-fit="cover" loop onmouseover="this.play()" onmouseout="this.pause()">
+                        <source
+                            src="{{ product.vidurl }}"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <a href="/products/{{product.id}}">
+                    <p class="">{{ product.name }}</p>
+                </a>
+                    <p class="spotlight-prod-descrip">{{ product.description }}</p>
+            </div>
+
+
             {% endif %}
         {% endfor %}
+    </div>
+</div>
 
 {% endblock %}
