@@ -40,11 +40,17 @@
         <div class="total-cart">Cart Total: ${{ cart_total_amount }}0 </div>
     <div class="checkout-container">
         <div class="checkout">
-            <a href="{% url 'cart_clear' %}">Clear Cart</a>
+            <a class="add_button_text" href="{% url 'cart_clear' %}">Clear Cart</a>
         </div>
         <div class="checkout">
-            <a href="{% url 'cart_checkout' %}">Checkout</a>
+        {% if cart_total_amount > 0 %}
+            <a class="add_button_text" href="{% url 'cart_checkout' %}">Checkout</a>
         </div>
+        {% else %}
+            <div class="checkout">
+                <a class="add_button_text" href="{% url 'products_index' %}">View Products</a>
+            </div>
+        {% endif %}
     </div>
             
         

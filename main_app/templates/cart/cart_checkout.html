@@ -11,7 +11,7 @@
 {% load cart_tag %}
 
 <h2 class="cart-title">Get excited for your purchase!</h2>
-<div class="total-cart">Cart Total: ${{ cart_total_amount }}0 </div>
+<div class="total-cart">Purchase Total: ${{ cart_total_amount }}0 </div>
 <div class="cart_container">
         {% for key,value in request.session.cart.items %}
     <div class="cart-prod">
