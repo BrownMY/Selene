@@ -25,7 +25,7 @@ body {
 
 .content {
     position: relative;
-    width: 80%
+    width: 80%;
     align-self: center;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.80);
@@ -129,7 +129,7 @@ li {
     justify-content: center;
 }
 
-
+/* 
 .img {
     float: left;
     width:  200px;
@@ -137,7 +137,7 @@ li {
     object-fit: cover;
     padding: 2px 40px;
     
-}
+} */
 
 .prod-index-page {
     display: grid;
@@ -161,6 +161,70 @@ li {
     width: 500px;
     margin: 10px 0px;
     border: 2px solid #1e4376;
+    overflow: hidden;
+    object-fit:contain;
+    object-position: center;
+
+}
+/* View moods  */
+.img-mood-index {
+    height: auto;
+    width: 100%;
+}
+
+.img-mood-index:hover {
+    height: auto;
+    width: 120%;
+
+}
+
+.p-tag {
+    position:absolute;
+    z-index: 1;
+    color: white;
+    background: rgba(30, 67, 118, 0.50);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.p-tag {
+    position:absolute;
+    z-index: 1;
+    color: white;
+    background: rgba(116, 28, 21, 0.42);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+/* View Picks */
+.img-picks-index {
+    position: relative;
+    top: -50px;
+    height: auto;
+    width: 100%;
+}
+
+.img-picks-index:hover {
+    height: auto;
+    width: 120%;
+
+}
+
+/* View all */
+.img-all-index {
+    position: relative;
+    top: -25px;
+    height: auto;
+    width: 100%;
+}
+
+.img-all-index:hover {
+    position: relative;
+    top: -20px;
+    height: auto;
+    width: 120%;
 
 }
 
@@ -191,6 +255,7 @@ li {
     color: white;
     background-color: rgba(116, 28, 21, 0.42);
     font-weight: 400;
+    border-radius: 15px;
     z-index: 1;
 }
 
@@ -399,6 +464,7 @@ a {
     height: 500px;
     width: 400px;
     border: 2px solid purple;
+    overflow: hidden;
 }
                       /* CART */
 .cart-container {
