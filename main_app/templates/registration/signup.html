@@ -3,13 +3,15 @@
 {% block content %}
 
 <h2 class="marquee"><span class="affirmation"> My ability to conquer my challenges is limitless; my potential to succeed is infinite. </span></h2>
-<h1 class = "signup">Create an account</h1>
-<form method='post' action="{% url 'sign_up' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="btn" value="sign_up">Sign up</button>
+
+
+ <h1 class = "signup">Create an account</h1> 
+<form class="signup-form" method='post' action="{% url 'sign_up' %}">
+    {% csrf_token %} 
+     {{ form.as_p }} 
+     <button type="submit" class="signup-btn" value="sign_up">Sign up</button>
     <input type="hidden" name="next" value="{{ next }}">
-</form>
+</form> 
 
 
 {% endblock %}

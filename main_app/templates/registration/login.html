@@ -3,12 +3,14 @@
 
 {% block content %}
 <h2 class=marquee><span class="affirmation">My body is healthy; my mind is brilliant; my soul is tranquil.</span></h2>
-<h1 class="login">Log in</h1>
-<form method='post' action="{% url 'login' %}">
+<h1 class="login">Welcome Back!</h1>
+<form class="login-form" method='post' action="{% url 'login' %}">
     {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" class="btn" value="login">
+    {{ form.as_p }} 
+    <input type="submit" class="login-btn" value="login">
     <input type="hidden" name="next" value="{{ next }}">
 </form>
 
+
 {% endblock %}
+
