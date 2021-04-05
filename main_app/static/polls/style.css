@@ -482,6 +482,11 @@ a {
     padding: 15px 20px;
 }
 
+.shop-more {
+   background-color: rgba(7, 9, 41, 0.6);
+   padding: 10px;
+}
+
 .cart-prod {
     display: flex;
     justify-content: center;
