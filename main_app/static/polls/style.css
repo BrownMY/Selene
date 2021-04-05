@@ -686,9 +686,10 @@ form{
     display: flex;
     flex-direction:column;
     justify-self: center;
-    height:375px;
+    height:335px;
     width: 500px;
     background-color: white; 
+    padding: 20px;
 }
 .show-page-div{
     display: flex;
@@ -701,12 +702,18 @@ form{
 
 .prod-show-misc {
     height: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cart-functions {
-    height: 200px;
+    display: flex;
+    justify-self: center;
+    height: 100px;
+    width: 200px;
+    align-items: right;
 }
 
-.prod-descrip-show{
+/* .prod-descrip-show{
     font-size: 20px;
-}
+} */
