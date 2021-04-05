@@ -141,3 +141,5 @@ def cart_total_amount(request):
 		return {'cart_total_amount' : total_bill} 
 	else:
 		return {'cart_total_amount' : 0} 
+
+

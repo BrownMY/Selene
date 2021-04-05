@@ -14,7 +14,7 @@
 <div class="total-cart">Purchase Total: ${{ cart_total_amount }}0 </div>
 <div class="cart_container">
         {% for key,value in request.session.cart.items %}
-    <div class="cart-prod">
+    <div class="cart-receipt-prod">
         <div class="cart-session-info">
             <a href="/products/{{value.product_id}}">{{value.name}}</a>
         </div>
@@ -26,6 +26,7 @@
         </div> 
         <div class="cart-session-info">
         Product total: ${{ value.price|multiply:value.quantity }}0
+        
     </div> 
 </div>
         {% endfor %}
