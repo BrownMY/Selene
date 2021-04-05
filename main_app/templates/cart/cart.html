@@ -12,13 +12,12 @@
 
 <h2 class="cart-title">Cart Details</h2>
 <div class="cart_container">
-    {% with totalAmount=0 %}
         {% for key,value in request.session.cart.items %}
     <div class="cart-prod">
         <div class="cart-session-info">
-            <a href="{{baseurl}}{{value.name}}">{{value.name}}</a>
+            <a href="/products/{{value.product_id}}">{{value.name}}</a>
         </div>
-        <a href="{{baseurl}}{{value.name}}">
+        <a href="/products/{{value.product_id}}">
             <img class="cart-image" src="{{baseurl}}{{value.image}}"/>
         </a>
         <div class="cart-session-info">
@@ -30,20 +29,15 @@
         <div class="cart-session-info"> 
             <a class="button" href="{% url 'item_decrement' value.product_id %}">-</a> 
             <a  class="button" href="{% url 'item_increment' value.product_id %}">+</a>   
+            <a class=button href="{% url 'item_clear' value.product_id %}">Clear Item</a>
         </div>
         <div class="cart-session-info">
-        {% with productTotal=value.price|multiply:value.quantity %}
-        Product total: {{ productTotal }}
+        Product total: {{ value.price|multiply:value.quantity }}
     </div> 
 </div>
-        <!-- {% with totalAmount=totalAmount|add:productTotal %}
-        {% endwith %} -->
-        {% endwith %}
         {% endfor %}
-        <!-- <div class="cart-session-info">
-            Cart Total: {{ totalAmount }}
-        </div> -->
-    {% endwith %}
+    
+        <div class="total-cart">Cart Total: {{ cart_total_amount }} </div>
     <div class="checkout-container">
         <div class="checkout">
             <a href="{% url 'cart_clear' %}">Clear Cart</a>
