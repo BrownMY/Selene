@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 from cart.cart import Cart
 
 
+
 def index(request):
     return render(request, 'index.html')
 
@@ -116,3 +117,4 @@ def cart_total_amount(request):
 		return {'cart_total_amount' : total_bill} 
 	else:
 		return {'cart_total_amount' : 0} 
+

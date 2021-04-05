@@ -541,6 +541,11 @@ a {
     text-decoration: none;
     color: white;
 }
+
+.must-login{
+    color:red;
+    align-items: center;
+}
 .checkout {
     display: flex;
     flex-direction: column;
@@ -637,7 +642,7 @@ footer {
         /* LOGIN */
 
 form{
-    margin-left: 500px;
+    margin-left: 415px;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
