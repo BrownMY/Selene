@@ -337,7 +337,7 @@ li {
 }
 
 .prod-price-show {
-    color: slateblue;
+    color: cornflowerblue;
 }
 
                     /* SPOTLIGHT */
@@ -440,7 +440,7 @@ a {
 .product_name{
     justify-content: center;
     display: flex;
-    color:rgb(138,96,207,1);
+    color:cornflowerblue;
 }
 /* h2 {
     justify-content: center;
@@ -680,7 +680,7 @@ form{
     max-width: 275px;
     max-height: 375px;
     object-fit:cover;
-   margin: 0px 25px;
+    margin: 0px 25px;
 }
 .prod-show-info{
     display: flex;
@@ -688,12 +688,16 @@ form{
     justify-self: center;
     height:335px;
     width: 500px;
-    background-color: white; 
+    background-color: rgb(0, 0, 0, .7); 
     padding: 20px;
+    color: white;
 }
 .show-page-div{
     display: flex;
     justify-content: center;
+    padding: 15px;
+    width: 815px;
+    /* background-color:rgba(255, 255, 255, 1); */
 }
 .prod-show-div{
     display:flex;
