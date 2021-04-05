@@ -19,10 +19,10 @@
             <div class="prod-rating-show">rating: {{ product.rating }}
             </div>
             <div class="prod-mood-show">mood:
-                <a href="/products/mood/{{ product.category }}">{{ product.category }}</a>
+                <a class="add_button_text" href="/products/mood/{{ product.category }}">{{ product.category }}</a>
             </div>
             <div class="cart-functions">
-                <div class="add_button"><a href="{% url 'cart_add' product.id %}">ADD</a></div>
+                <div class="add_button"><a class="add_button_text" href="{% url 'cart_add' product.id %}">ADD</a></div>
                 <!-- <div class="button"><a href="{% url 'item_decrement' product.id %}">-</a>
                 </div>
                 <div class="button"><a href="{% url 'item_increment' product.id %}">+</a>
