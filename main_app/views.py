@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 from cart.cart import Cart
 
 
+
 def index(request):
     return render(request, 'index.html')
 
@@ -46,14 +47,26 @@ def spotlight(request):
     products = Product.objects.all()
     return render(request, 'products/spotlight.html', {'products': products})
 
+def ourpicks(request):
+   products = Product.objects.all()
+#    mochapick = none
+#     for product in products:
+    return render(request, 'ourpicks.html')
+
 def mood(request):
     products = Product.objects.all()
     mood_no_repeat = []
+    catimg = []
     for product in products:
         if product.category not in mood_no_repeat:
             mood_no_repeat.append(product.category)
+            catimg.append(product.catimg)
     
-    return render(request, 'products/mood.html', {'products': mood_no_repeat})
+    print(catimg)
+    return render(request, 'products/mood.html', {
+        'products': mood_no_repeat,
+        'catimg': catimg
+        })
 
 def mood_show(request, category):
     category = Product.objects.filter(category=category)
@@ -110,3 +123,4 @@ def cart_total_amount(request):
 		return {'cart_total_amount' : total_bill} 
 	else:
 		return {'cart_total_amount' : 0} 
+
