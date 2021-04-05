@@ -640,14 +640,14 @@ footer {
 
         /* LOGIN */
 
-form{
+ .login-form{
     margin-left: 415px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 50px;
-    height:500px;
-}
-.btn{
+    height:200px;
+} 
+.login-btn{
     border-style: solid;
     border-radius: 4px;
     border-color: cornflowerblue;
@@ -661,6 +661,28 @@ form{
     text-align: center;
 }
 
+
+                /* SIGNUP */
+
+.signup-form{
+    width:500px;
+    margin-left: 300px;
+    height: 450px;
+}
+.signup-btn{
+    border-style: solid;
+    border-radius: 4px;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    padding: 5px 30px;
+    margin: 10px 10px;
+    color: white;
+    width: 150px;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 130px;
+}
             /* INDIVIDUAL PRODUCT PAGE */
 .prod-img-show{
     display: flex;
@@ -700,3 +722,14 @@ form{
 .prod-descrip-show{
     font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+  
+  
