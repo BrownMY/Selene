@@ -56,22 +56,20 @@ def ourpicks(request):
 def mood(request):
     products = Product.objects.all()
     mood_no_repeat = []
+    categories = []
     for product in products:
+        
+        if product.category in categories:
+            continue
+        else:
+            categories.append(product.category)
 
-        mood_product = {
-            "category": product.category,
-            "img": product.catimg
-        }
-        # print(mood_product)
-        # print(mood_product["category"])
-        if mood_product["category"] not in mood_no_repeat:
-            # print(product.category)
-            mood_no_repeat.append(mood_product["category"])
+            mood_product = {
+                "category": product.category,
+                "img": product.catimg
+            }
 
-            #inside of mood_no_repeat["category", add corresponding img]
-           
-           
-            
+            mood_no_repeat.append(mood_product)
     
     print(mood_no_repeat)
 

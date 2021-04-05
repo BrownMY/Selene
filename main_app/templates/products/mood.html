@@ -9,41 +9,17 @@
 <ul class="main-mood-div">
 
     {% for mood in products %}
-    <a href="/products/mood/{{ product }}">
+    <a href="/products/mood/{{ mood.category }}">
         <li class="ind-mood-div">
-            {{ mood }}
-            {% for img in catimg %}
-            
-            <img src="{{ img }}">
-            {% endfor %}
+
+            {{ mood.category }}
+            <img class="catimg" src="{{ mood.img }}"/>
 
         </li>
     </a>
     {% endfor %}
 
 </ul>
-
-<!-- <div class="ind-mood-div">
-    <img class="sleep"
-        src="https://images.unsplash.com/photo-1610210144022-8e9303fece35?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
-</div>
-<div class="ind-mood-div">
-    <img class="energize"
-        src="https://images.unsplash.com/photo-1442124920820-8e5f4b07b563?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80">
-</div>
-<div class="ind-mood-div">
-    <img class="indulge"
-        src="https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
-</div>
-<div class="ind-mood-div">
-    <img class="calm"
-        src="https://images.unsplash.com/photo-1600338815964-28b2052b976a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-</div>
-<div class="ind-mood-div">
-    <img class="romance"
-        src="https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
-</div>
-<hr /> -->
 
 
 {% endblock %}
