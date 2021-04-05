@@ -49,11 +49,17 @@ def spotlight(request):
 def mood(request):
     products = Product.objects.all()
     mood_no_repeat = []
+    catimg = []
     for product in products:
         if product.category not in mood_no_repeat:
             mood_no_repeat.append(product.category)
+            catimg.append(product.catimg)
     
-    return render(request, 'products/mood.html', {'products': mood_no_repeat})
+    print(catimg)
+    return render(request, 'products/mood.html', {
+        'products': mood_no_repeat,
+        'catimg': catimg
+        })
 
 def mood_show(request, category):
     category = Product.objects.filter(category=category)
