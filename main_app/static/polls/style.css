@@ -133,7 +133,6 @@ li {
     justify-content: center;
 }
 
-
 /* .img {
     float: left;
     width:  200px;
@@ -165,6 +164,70 @@ li {
     width: 500px;
     margin: 10px 0px;
     border: 2px solid #1e4376;
+    overflow: hidden;
+    object-fit:contain;
+    object-position: center;
+
+}
+/* View moods  */
+.img-mood-index {
+    height: auto;
+    width: 100%;
+}
+
+.img-mood-index:hover {
+    height: auto;
+    width: 120%;
+
+}
+
+.p-tag {
+    position:absolute;
+    z-index: 1;
+    color: white;
+    background: rgba(30, 67, 118, 0.50);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.p-tag {
+    position:absolute;
+    z-index: 1;
+    color: white;
+    background: rgba(116, 28, 21, 0.42);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+/* View Picks */
+.img-picks-index {
+    position: relative;
+    top: -50px;
+    height: auto;
+    width: 100%;
+}
+
+.img-picks-index:hover {
+    height: auto;
+    width: 120%;
+
+}
+
+/* View all */
+.img-all-index {
+    position: relative;
+    top: -25px;
+    height: auto;
+    width: 100%;
+}
+
+.img-all-index:hover {
+    position: relative;
+    top: -20px;
+    height: auto;
+    width: 120%;
 
 }
 
@@ -195,6 +258,7 @@ li {
     color: white;
     background-color: rgba(116, 28, 21, 0.42);
     font-weight: 400;
+    border-radius: 15px;
     z-index: 1;
 }
 
@@ -404,6 +468,7 @@ a {
     height: 500px;
     width: 400px;
     border: 2px solid purple;
+    overflow: hidden;
 }
                       /* CART */
 
@@ -475,6 +540,11 @@ a {
 .add_button_text {
     text-decoration: none;
     color: white;
+}
+
+.must-login{
+    color:red;
+    align-items: center;
 }
 .checkout {
     display: flex;
@@ -571,7 +641,7 @@ footer {
         /* LOGIN */
 
 form{
-    margin-left: 500px;
+    margin-left: 415px;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;

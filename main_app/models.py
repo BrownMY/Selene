@@ -11,6 +11,7 @@ class Product(models.Model):
     rating = models.IntegerField()
     imgurl = models.CharField(max_length=250)
     vidurl = models.CharField(max_length=250)
+    catimg = models.CharField(max_length=350)
 
     def __str__(self):
         return self.name
