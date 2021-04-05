@@ -48,8 +48,8 @@ def spotlight(request):
 
 def ourpicks(request):
    products = Product.objects.all()
-   mochapick = none
-    for product in products:
+#    mochapick = none
+#     for product in products:
     return render(request, 'ourpicks.html')
 
 def mood(request):
