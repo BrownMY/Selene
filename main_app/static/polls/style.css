@@ -24,12 +24,15 @@ body {
 }
 
 .content {
-    display: flex;
+    
     flex-direction: column;
     position: relative;
-    width: 80%;
-    width: 1100px;
-    align-self: center;
+    width: 1200px;
+    justify-content: center;
+    /* width: 80%;
+    width: 1100px; */
+    /* align-self: center; */
+    align-items: center;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.80);
     /* opacity: .7; */
@@ -347,9 +350,9 @@ li {
 
 .div-spotlight {
     position: relative;
-    left: -800px;
+    left: -750px;
     width: 600px;
-    height: 1200px;
+    height: 1100px;
     overflow-y: auto;
     overflow-x: hidden;
     transform: rotate(-90deg) translateY(-100px);
@@ -364,11 +367,10 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: rotate(90deg);
-    transform-origin: right top;
+    transform: rotate(90deg); 
     /* width: -200px; */
     height: 550px;
-    margin: -150px 20px;
+    margin: -100px 20px;
     object-fit: cover;
     
     
@@ -450,23 +452,37 @@ a {
 .main-mood-div {
     display: flex;
     justify-content: space-around;
-    
-}
-
-.catimg-container {
-    width: 200px;
-    height: 500px;
-    overflow: hidden;
+    padding: 10px;
+    margin: 0px;
 }
 
 .ind-mood-div {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
     height: 500px;
-    width: 200px;
-    border: 2px solid purple;
+    max-width: 200px;
+    border: 2px solid  #1e4376;
     overflow: hidden;
+}
+
+.mood-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 25px;
+    background: rgba(30, 67, 118, 0.42);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.catimg {
+    height: 100%;
+    width: auto;
 }
                       /* CART */
 
