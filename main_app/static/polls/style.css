@@ -607,23 +607,25 @@ form{
     
 }
 .prod-show-info{
-    margin-left: 600px;
+    margin-left: 450px;
     margin-top: -400px;
     height:50px;
     width: 500px;
-    /* border: 2px solid purple;
-   box-sizing: border-box; */
+    /* border: 2px solid purple; */
+    /* box-sizing: border-box white;   */
+    background-color: white; 
+    
    
     
 
 }
 .show-page-div{
     height: 500px;
-    width: 300px;
+    width: 800px;
 }
 .prod-show-div{
     display:flex;
-    width: 400px;
+    width: 800px;
 }
 
 .prod-descrip-show{
