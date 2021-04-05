@@ -47,6 +47,12 @@ def spotlight(request):
     products = Product.objects.all()
     return render(request, 'products/spotlight.html', {'products': products})
 
+def ourpicks(request):
+   products = Product.objects.all()
+#    mochapick = none
+#     for product in products:
+    return render(request, 'ourpicks.html')
+
 def mood(request):
     products = Product.objects.all()
     mood_no_repeat = []
