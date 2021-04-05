@@ -644,7 +644,7 @@ footer {
 .team{
     justify-content: center;
     display: flex;
-    color:rgb(138,96,207,1);   
+    color:cornflowerblue;   
 }
 
 
@@ -682,6 +682,7 @@ form{
     object-fit:cover;
     margin: 0px 25px;
 }
+
 .prod-show-info{
     display: flex;
     flex-direction:column;
@@ -695,6 +696,7 @@ form{
 .show-page-div{
     display: flex;
     justify-content: center;
+    justify-self: center;
     padding: 15px;
     width: 815px;
     /* background-color:rgba(255, 255, 255, 1); */
