@@ -3,26 +3,26 @@
 
 
 {% block content %}
-<h2 class="marquee"><span class="affirmation"> I am at peace with all that has happened, is happening, and will happen.</span></h2>
-    <h2 class="mood-h2">products by mood</h2>
-    <ul class="main-mood-div">
+<h2 class="marquee"><span class="affirmation"> I am at peace with all that has happened, is happening, and will
+        happen.</span></h2>
+<h2 class="mood-h2">products by mood</h2>
+<ul class="main-mood-div">
 
     {% for mood in products %}
-    <li class="ind-mood-div">
-        <a href="/products/mood/{{ product }}">
-            {{ mood }} 
-            <div class="cat-img">
-               
-            </div>
+    <a href="/products/mood/{{ product }}">
+        <li class="ind-mood-div">
+            {{ mood }}
+            {% for img in catimg %}
+            
+            <img src="{{ img }}">
+            {% endfor %}
 
-        </a>
-    </li>
+        </li>
+    </a>
     {% endfor %}
-    <!-- {% for img in catimg %}
-        <img src="{{ catimg }}">
-    {% endfor %}
-    <img src="{{ catimg }}"> -->
+
 </ul>
+
 <!-- <div class="ind-mood-div">
     <img class="sleep"
         src="https://images.unsplash.com/photo-1610210144022-8e9303fece35?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
