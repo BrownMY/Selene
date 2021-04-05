@@ -49,9 +49,22 @@ def spotlight(request):
 
 def ourpicks(request):
     products = Product.objects.all()
-#    mochapick = none
-#     for product in products:
-    return render(request, 'ourpicks.html')
+    our_picks = {
+        "mocha_pick": None,
+        "jessica_pick": None,
+        "sophia_pick": None
+    }
+    
+    for product in products:
+        if product.name == "Caffeine-Infused Wake Up Serum":
+            our_picks["jessica_pick"] = product
+        elif product.name == "Pink Petal Ultra Hydrating Oil":
+            our_picks["mocha_pick"] = product
+        elif product.name == "BonAppétit Lemon Vanilla Cake Soap bar (set of 2)":
+            our_picks["sophia_pick"] = product
+
+    print(our_picks)
+    return render(request, 'ourpicks.html', {'product': our_picks})
 
 def mood(request):
     products = Product.objects.all()
