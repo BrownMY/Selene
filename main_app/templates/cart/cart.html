@@ -11,6 +11,9 @@
 {% load cart_tag %}
 
 <h2 class="cart-title">Cart Details</h2>
+<div class="shop-more">
+    <a class="add_button_text" href="{% url 'products_index' %}">Not ready to checkout?  Click here to continue browsing</a>
+</div>
 <div class="cart_container">
         {% for key,value in request.session.cart.items %}
     <div class="cart-prod">
