@@ -1,15 +1,16 @@
 body {
-   
-   background-size:cover;
-   background-repeat: no-repeat;  
-   /* background-image: url("https://i.imgur.com/XOAi1Qo.jpg"); */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url("https://i.imgur.com/XOAi1Qo.jpg"); */
 }
+
 * {
     font-family: 'Raleway', sans-serif;
 }
 
 body {
-    display:block;
+    display: block;
     margin: 0;
 }
 
@@ -17,10 +18,10 @@ body {
     margin-top: 50px;
     height: 100%;
     min-height: 800px;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-image: url("https://i.imgur.com/XOAi1Qo.jpg");
     background-repeat: no-repeat;
-    
+
 }
 
 .content {
@@ -37,7 +38,8 @@ body {
     background: rgba(255, 255, 255, 0.80);
     /* opacity: .7; */
 }
-                    /* NAV BAR */
+
+/* NAV BAR */
 .nav-wrapper {
 
     position: fixed;
@@ -48,7 +50,7 @@ body {
     margin-top: 0;
     height: 50px;
     padding: 5px;
-    border-bottom: 5px solid rgb(120, 186, 224,1);
+    border-bottom: 5px solid rgb(120, 186, 224, 1);
     color: black;
 }
 
@@ -57,9 +59,9 @@ body {
 }
 
 .nav {
-    background-color:white;
+    background-color: white;
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 .nav_list {
@@ -76,18 +78,19 @@ li {
     display: inline-flex;
     justify-content: space-between;
     text-decoration: none;
-    color:black;
-   
+    color: black;
+
 }
 
-                    /* AFFIRMATION */
+/* AFFIRMATION */
 
 @-webkit-keyframes scroll {
     0% {
-        -webkit-transform: translate(0,0);
+        -webkit-transform: translate(0, 0);
     }
+
     100% {
-        -webkit-transform: translate(-100%,0)
+        -webkit-transform: translate(-100%, 0)
     }
 }
 
@@ -99,37 +102,38 @@ li {
     overflow: hidden;
 }
 
-.affirmation{
+.affirmation {
     display: inline-block;
     padding-left: 100%;
     font-weight: 300;
-    color:#1e4376;
-    -webkit-animation:scroll 40s infinite;
-    
+    color: #1e4376;
+    -webkit-animation: scroll 40s infinite;
+
 }
 
-                    /* LOGIN */
-.login{
+/* LOGIN */
+.login {
     justify-content: center;
     display: flex;
-    color:cornflowerblue;
+    color: cornflowerblue;
 }
 
-                    /* SIGN-UP */
-.signup{
+/* SIGN-UP */
+.signup {
     justify-content: center;
     display: flex;
-    color:cornflowerblue;
+    color: cornflowerblue;
 }
-                    /* TEAM */
 
-.team-head{
+/* TEAM */
+
+.team-head {
     justify-content: center;
     display: flex;
-    color:cornflowerblue;
+    color: cornflowerblue;
 }
 
-                    /* HOMEPAGE STYLING */
+/* HOMEPAGE STYLING */
 .homepage-main {
     display: flex;
     flex-direction: row;
@@ -150,7 +154,7 @@ li {
     display: grid;
     align-items: center;
     margin: 10px;
-    padding:5px;
+    padding: 5px;
     /* color: white; */
     font-size: 25px;
     flex-direction: column;
@@ -169,10 +173,11 @@ li {
     margin: 10px 0px;
     border: 2px solid #1e4376;
     overflow: hidden;
-    object-fit:contain;
+    object-fit: contain;
     object-position: center;
 
 }
+
 /* View moods  */
 .img-mood-index {
     height: auto;
@@ -186,7 +191,7 @@ li {
 }
 
 .p-tag {
-    position:absolute;
+    position: absolute;
     font-size: 20px;
     z-index: 1;
     color: white;
@@ -240,7 +245,7 @@ li {
 }
 
 .spotlight-index {
-    position:absolute;
+    position: absolute;
     color: white;
     font-size: 30px;
     padding: 5px;
@@ -249,7 +254,7 @@ li {
 }
 
 #overlay-index:hover {
-    position:absolute;
+    position: absolute;
     color: white;
     background-color: rgba(116, 28, 21, 0.42);
     font-weight: 400;
@@ -257,7 +262,7 @@ li {
     z-index: 1;
 }
 
-                    /* VIEW ALL PRODUCTS */
+/* VIEW ALL PRODUCTS */
 .prod-container {
     position: relative;
 }
@@ -265,7 +270,7 @@ li {
 .prod-index-img {
     display: block;
     float: left;
-    width:  275px;
+    width: 275px;
     height: 375px;
     max-width: 275px;
     max-height: 375px;
@@ -311,10 +316,10 @@ li {
     padding: 0px;
     /* max-width: 350px;
     width: 300px; */
- 
+
 }
 
-.prod-index-li { 
+.prod-index-li {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -326,7 +331,7 @@ li {
 .prod-index-head {
     justify-content: center;
     display: flex;
-    color:cornflowerblue;
+    color: cornflowerblue;
     background-color: white;
     padding: 15px;
 }
@@ -335,7 +340,7 @@ li {
     color: cornflowerblue;
 }
 
-                    /* SPOTLIGHT */
+/* SPOTLIGHT */
 
 .spotlight-container {
     display: flex;
@@ -372,8 +377,8 @@ li {
     height: 550px;
     margin: -100px 20px;
     object-fit: cover;
-    
-    
+
+
 }
 
 .vid-container-spot {
@@ -384,7 +389,7 @@ li {
     height: 750px;
     float: left;
     overflow: hidden;
-  
+
 }
 
 .vid-spotlight {
@@ -392,7 +397,7 @@ li {
     height: 650px;
     object-fit: cover;
     float: left;
-    
+
 }
 
 .p-spotlight {
@@ -413,29 +418,32 @@ a {
 
 
 
-.add_cart{
+.add_cart {
     color: magenta;
 }
 
-.product_view{
+.product_view {
     color: cornflowerblue;
 }
-.product_text{
+
+.product_text {
     padding: 0px;
     margin: 4px;
     height: 30px;
 }
 
-.home_selene{
-    color:rgb1(70,126,185,1);
-    
-    
+.home_selene {
+    color: rgb1(70, 126, 185, 1);
+
+
 }
-.product_name{
+
+.product_name {
     justify-content: center;
     display: flex;
-    color:cornflowerblue;
+    color: cornflowerblue;
 }
+
 /* h2 {
     justify-content: center;
     display: flex;
@@ -454,6 +462,13 @@ a {
     justify-content: space-around;
     padding: 10px;
     margin: 0px;
+
+}
+
+.catimg-container {
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
 }
 
 .ind-mood-div {
@@ -490,10 +505,11 @@ a {
     display: flex;
     justify-content: right;
 }
-.cart-title{
+
+.cart-title {
     justify-content: left;
     display: flex;
-    color:cornflowerblue;
+    color: cornflowerblue;
     background-color: white;
     padding: 15px 20px;
 }
@@ -511,17 +527,17 @@ a {
 }
 
 .cart-session-info {
-    width:150px;
+    width: 150px;
 
 }
 
 .cart-image {
     float: left;
-    width:  100px;
+    width: 100px;
     height: 100px;
     max-width: 100px;
     max-height: 100px;
-    object-fit:cover;
+    object-fit: cover;
     margin: 10px 20px;
 }
 
@@ -537,6 +553,7 @@ a {
     color: white;
     text-decoration: none;
 }
+
 .add_button {
     border-style: solid;
     border-radius: 4px;
@@ -556,10 +573,11 @@ a {
     color: white;
 }
 
-.must-login{
-    color:red;
+.must-login {
+    color: red;
     align-items: center;
 }
+
 .checkout {
     display: flex;
     flex-direction: column;
@@ -592,39 +610,40 @@ a {
     justify-content: right;
     width: 950px;
 }
+
 /* .cart{
     justify-content: center;
     display: flex;
     color:rgb(138,96,207,1);
 } */
 
-                    /* FOOTER */
+/* FOOTER */
 footer {
     /* background-color: white; */
     height: 3%;
     position: fixed;
     bottom: 0;
-    left:0;
+    left: 0;
     width: 100%;
     color: black;
 
-  }
+}
 
-            /* ABOUT PAGE */
+/* ABOUT PAGE */
 .bio {
     width: 350px;
     height: 800px;
 }
 
-.bio-img{
+.bio-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     justify-content: center;
     display: flex;
-} 
+}
 
-.bio-img-div{
+.bio-img-div {
     float: left;
     position: relative;
     width: 250px;
@@ -633,20 +652,20 @@ footer {
     border-radius: 50%;
     margin-left: 30px;
     margin-bottom: 50px;
-    margin-right:30px;
+    margin-right: 30px;
     background-color: black;
-    
+
 }
 
-.about-h3{
-    font-size:30px;
+.about-h3 {
+    font-size: 30px;
     justify-content: center;
     display: flex;
 }
 
-.bio-about{
-   font-size:15px;
-  
+.bio-about {
+    font-size: 15px;
+
 }
 
 .bio-text {
@@ -655,23 +674,24 @@ footer {
     margin: 0px 20px;
 }
 
-.team{
+.team {
     justify-content: center;
     display: flex;
-    color:cornflowerblue;   
+    color: cornflowerblue;
 }
 
 
-        /* LOGIN */
+/* LOGIN */
 
- .login-form{
+.login-form {
     margin-left: 415px;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 50px;
-    height:200px;
-} 
-.login-btn{
+    height: 200px;
+}
+
+.login-btn {
     border-style: solid;
     border-radius: 4px;
     border-color: cornflowerblue;
@@ -686,14 +706,15 @@ footer {
 }
 
 
-                /* SIGNUP */
+/* SIGNUP */
 
-.signup-form{
-    width:500px;
+.signup-form {
+    width: 500px;
     margin-left: 300px;
     height: 450px;
 }
-.signup-btn{
+
+.signup-btn {
     border-style: solid;
     border-radius: 4px;
     border-color: cornflowerblue;
@@ -707,29 +728,31 @@ footer {
     text-align: center;
     margin-left: 130px;
 }
-            /* INDIVIDUAL PRODUCT PAGE */
-.prod-img-show{
+
+/* INDIVIDUAL PRODUCT PAGE */
+.prod-img-show {
     display: flex;
     float: left;
-    width:  275px;
+    width: 275px;
     height: 375px;
     max-width: 275px;
     max-height: 375px;
-    object-fit:cover;
+    object-fit: cover;
     margin: 0px 25px;
 }
 
-.prod-show-info{
+.prod-show-info {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-self: center;
-    height:335px;
+    height: 335px;
     width: 500px;
-    background-color: rgb(0, 0, 0, .7); 
+    background-color: rgb(0, 0, 0, .7);
     padding: 20px;
     color: white;
 }
-.show-page-div{
+
+.show-page-div {
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -737,8 +760,9 @@ footer {
     width: 815px;
     /* background-color:rgba(255, 255, 255, 1); */
 }
-.prod-show-div{
-    display:flex;
+
+.prod-show-div {
+    display: flex;
     width: 800px;
 }
 
@@ -756,7 +780,66 @@ footer {
     align-items: right;
 }
 
-/* .prod-descrip-show{
-    font-size: 20px;
-} */
 
+
+
+/* The dropdown container */
+.dropdown {
+    /* float: left; */
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 13px;
+    /* border: 1px solid black; */
+    outline: none;
+    color: white;
+    /* padding:  */
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    width:120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: white;
+    width: 100%;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color:rgb(120, 186, 224, 1);
+    
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

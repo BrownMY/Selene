@@ -27,15 +27,36 @@
           <li class="home"><a href="{% url 'index'%}">Home</a></li>
           
           {% if user.is_authenticated %}
-
-          <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li>
-          <li><a class="nav" href="{% url 'cart' %}">View Cart ({{ request.session.cart|length }})</a></li>
+          <div class="dropdown">
+          <button class="dropbtn">Products
+                  <i class="fa fa-caret-down"></i>
+                </button>
+            <div class="dropdown-content">
+              <li><a class="nav" href="{% url 'products_index' %}">All Products</a></li>
+              <li><a class="nav" href="{% url 'spotlight' %}">Spotlight</a></li>
+              <li><a class="nav" href="{% url 'mood' %}">By Mood</a></li>
+              <li><a class="nav" href="{% url 'ourpicks' %}">Our Picks</a></li>
+            </div>
+        </div>
+        
+          <!-- <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li> -->
           <li><a class="nav" href="{% url 'about' %}">Meet the Team</a></li>
+          <li><a class="nav" href="{% url 'cart' %}">View Cart ({{ request.session.cart|length }})</a></li>
           <li><a class="nav" href="{% url 'logout' %}">Log out</a></li>
 
 
           {% else %}
-          <li><a class="nav" href="{% url 'products_index' %}">View All Products</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+              <div class="dropdown-content">
+                <li><a class="nav" href="{% url 'products_index' %}">All Products</a></li>
+                <li><a class="nav" href="{% url 'spotlight' %}">Spotlight</a></li>
+                <li><a class="nav" href="{% url 'mood' %}">By Mood</a></li>
+                <li><a class="nav" href="{% url 'ourpicks' %}">Our Picks</a></li>
+              </div>
+          </div>
           <li><a class="nav" href="{% url 'about' %}">Meet the Team</a></li>
           <li><a class="nav" href="{% url 'login' %}">Log in</a></li>
           <li><a class="nav" href="{% url 'sign_up' %}">Sign up</a></li>
@@ -55,7 +76,23 @@
   <footer>
     <div class="right">All Rights Reserved, &copy; 2021 Selenê &nbsp;</div>
   </footer>
-
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
 </body>
 
 </html
