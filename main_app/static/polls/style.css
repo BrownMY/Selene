@@ -27,7 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 80%;
     width: 1000px;
     align-self: center;
     margin: 0 auto;
@@ -131,6 +130,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 1em;
 }
 
 /* .img {
@@ -452,12 +452,18 @@ a {
     
 }
 
+.catimg-container {
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+}
+
 .ind-mood-div {
     align-items: center;
     justify-content: center;
     margin: 10px;
     height: 500px;
-    width: 400px;
+    width: 200px;
     border: 2px solid purple;
     overflow: hidden;
 }
