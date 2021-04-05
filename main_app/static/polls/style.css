@@ -564,8 +564,7 @@ footer {
 .team{
     justify-content: center;
     display: flex;
-    color:rgb(138,96,207,1);
-    
+    color:rgb(138,96,207,1);   
 }
 
 
@@ -594,38 +593,40 @@ form{
 
             /* INDIVIDUAL PRODUCT PAGE */
 .prod-img-show{
-    display: block;
-    /* float: left; */
+    display: flex;
+    float: left;
     width:  275px;
     height: 375px;
     max-width: 275px;
     max-height: 375px;
-    object-fit: cover;
-    margin-left: 75px;
-    margin-top: 75px;
-    
-    
+    object-fit:cover;
+   margin: 0px 25px;
 }
 .prod-show-info{
-    margin-left: 450px;
-    margin-top: -400px;
-    height:50px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    justify-self: center;
+    height:375px;
     width: 500px;
-    /* border: 2px solid purple; */
-    /* box-sizing: border-box white;   */
     background-color: white; 
-    
-   
-    
-
 }
 .show-page-div{
-    height: 500px;
-    width: 800px;
+    display: flex;
+    justify-content: center;
 }
 .prod-show-div{
     display:flex;
     width: 800px;
+}
+
+.prod-show-misc {
+    height: 100px;
+}
+
+.cart-functions {
+    height: 200px;
+
 }
 
 .prod-descrip-show{

@@ -21,12 +21,14 @@
             <div class="prod-mood-show">mood:
                 <a href="/products/mood/{{ product.category }}">{{ product.category }}</a>
             </div>
-            <div><a class="add_button" href="{% url 'cart_add' product.id %}">Add To Cart</a></div>
-            <div><a href="{% url 'item_increment' product.id %}">+</a>
-            </div>
-            <div><a href="{% url 'item_decrement' product.id %}">-</a>
-            </div>
-            <div class="button" href="{% url 'item_clear' product.id %}">Clear Item
+            <div class="cart-functions">
+                <div><a class="add_button" href="{% url 'cart_add' product.id %}">Add To Cart</a></div>
+                <div><a href="{% url 'item_increment' product.id %}">+</a>
+                </div>
+                <div><a href="{% url 'item_decrement' product.id %}">-</a>
+                </div>
+                <div class="button" href="{% url 'item_clear' product.id %}">Clear Item
+                </div>
             </div>
         </div>
 
