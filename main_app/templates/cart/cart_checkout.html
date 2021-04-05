@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class=marquee>
+    <span class="affirmation">I give myself the care and attention that I deserve.
+    </span>
+</h2>
+{% load static %}
+{% static "" as baseurl %}
+{% load cart_tag %}
+
+<h2 class="cart-title">Get excited for your purchase!</h2>
+<div class="total-cart">Purchase Total: ${{ cart_total_amount }}0 </div>
+<div class="cart_container">
+        {% for key,value in request.session.cart.items %}
+    <div class="cart-prod">
+        <div class="cart-session-info">
+            <a href="/products/{{value.product_id}}">{{value.name}}</a>
+        </div>
+        <div class="cart-session-info">
+            Price: ${{value.price}}0
+        </div>
+        <div class="cart-session-info">
+            Quantity: {{value.quantity}}
+        </div> 
+        <div class="cart-session-info">
+        Product total: ${{ value.price|multiply:value.quantity }}0
+    </div> 
+</div>
+        {% endfor %}
+    
+        
+    </div>
+
+{% endblock %}

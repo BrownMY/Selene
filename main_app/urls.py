@@ -19,7 +19,7 @@ urlpatterns = [
     path('cart/item_decrement/<int:product_id>/',
          views.item_decrement, name='item_decrement'),
     path('cart/cart_clear/', views.cart_clear, name='cart_clear'),
-    path('cart/cart-detail/',views.cart_detail,name='cart_detail'),
-    path('ourpicks/', views.ourpicks, name='ourpicks')
-    
+    path('cart/cart-detail/',views.cart_detail, name='cart_detail'),
+    path('ourpicks/', views.ourpicks, name='ourpicks'),
+    path('cart_checkout', views.cart_checkout, name='cart_checkout')
 ]
