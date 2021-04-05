@@ -82,6 +82,10 @@ def cart(request):
     cart = Cart(request)
     return render(request, 'cart/cart.html')
 
+def cart_checkout(request):
+    cart = Cart(request)
+    return render(request, 'cart/cart_checkout.html')
+
 def cart_add(request, product_id):
     cart = Cart(request)
     product = Product.objects.get(id=product_id)
@@ -103,8 +107,13 @@ def item_increment(request, product_id):
 def item_decrement(request, product_id):
     cart = Cart(request)
     product = Product.objects.get(id=product_id)
-    cart.decrement(product=product)
-    return redirect("cart")
+    for key,value in request.session['cart'].items():
+        if value['quantity'] == 1:
+            cart.remove(product)
+            return redirect("cart")
+        else:
+            cart.decrement(product=product)
+            return redirect("cart")
 
 def cart_clear(request):
     cart = Cart(request)
@@ -119,8 +128,7 @@ def cart_total_amount(request):
 		cart = Cart(request)
 		total_bill = 0.0
 		for key,value in request.session['cart'].items():
-			total_bill = total_bill + (float(value['price']) * value['quantity'])
+		    total_bill = total_bill + (float(value['price']) * value['quantity'])
 		return {'cart_total_amount' : total_bill} 
 	else:
 		return {'cart_total_amount' : 0} 
-
