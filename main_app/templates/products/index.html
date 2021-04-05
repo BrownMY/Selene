@@ -23,18 +23,19 @@
           </div>
         </div>
          <a class="product_view" href="/products/{{product.id}}">
-        <p class="product_text">{{ product.name }}</p></a>
-        <p class="product_text">${{ product.price}}0</p>
+        <div class="product_text">{{ product.name }}</div></a>
+        <div class="product_text">${{ product.price}}0</div>
         {% if user.is_authenticated %}
         <p class="add_button"><a class="add_button_text" href="{% url 'cart_add' product.id %}">ADD</a></p>
-
         {% else %}
+
         <p class="must-login">login to make a purchase</p>
         <!-- <p><a href="{% url 'item_increment' product.id %}">+</a></p>
         <p><a href="{% url 'item_decrement' product.id %}">-</a></p> -->
         {% endif %}
      
         </li>
+
         
         
         {% endfor %}
