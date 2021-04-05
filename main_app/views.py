@@ -48,7 +48,7 @@ def spotlight(request):
     return render(request, 'products/spotlight.html', {'products': products})
 
 def ourpicks(request):
-   products = Product.objects.all()
+    products = Product.objects.all()
 #    mochapick = none
 #     for product in products:
     return render(request, 'ourpicks.html')
