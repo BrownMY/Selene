@@ -2,7 +2,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h3 class="affirmation">Affirmation: My body is healthy; my mind is brilliant; my soul is tranquil.</h3>
+<h2 class=marquee><span class="affirmation">My body is healthy; my mind is brilliant; my soul is tranquil.</span></h2>
 <h1 class="login">Log in</h1>
 <form method='post' action="{% url 'login' %}">
     {% csrf_token %}

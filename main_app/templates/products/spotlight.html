@@ -1,19 +1,32 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
-    <h1>spotlight products</h1>
-    <p>our best rated products</p>
+<h2 class=marquee><span class="affirmation">I listen to my intuition and trust my inner guide.</span></h2>
+<div class="spotlight-container">
+    <h2 class="spotlight-h2">spotlight products</h2>
+    
 
-    {% for product in products %}
-        {% if product.rating == 5 %}
-     <a href="/products/{{product.id}}">
-        <p>{{ product.name }}</p>
-        <img class="img-spotlight" src="{{ product.imgurl }}">
+    <div class="div-spotlight">
+        {% for product in products %}
+            {% if product.rating == 5 %}
+            <div class="ind-prod-spotlight">
+                <div class="vid-container-spot">
+                    <video class="vid-spotlight" width="375px" height="650px" object-fit="cover" loop onmouseover="this.play()" onmouseout="this.pause()">
+                        <source
+                            src="{{ product.vidurl }}"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <a href="/products/{{product.id}}">
+                    <p class="">{{ product.name }}</p>
+                </a>
+                    <p class="spotlight-prod-descrip">{{ product.description }}</p>
+            </div>
 
-    <hr />
-        {% endif %}
-    {% endfor %}
+
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
 
 {% endblock %}

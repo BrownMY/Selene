@@ -3,15 +3,15 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models import Product
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
+from cart.cart import Cart
 
 
 def index(request):
     return render(request, 'index.html')
 
-
 def about(request):
     return render(request, 'about.html')
-
 
 def sign_up(request):
     error_message = ''
@@ -48,7 +48,18 @@ def spotlight(request):
 
 def mood(request):
     products = Product.objects.all()
-    return render(request, 'products/mood.html', {'products': products})
+    mood_no_repeat = []
+    catimg = []
+    for product in products:
+        if product.category not in mood_no_repeat:
+            mood_no_repeat.append(product.category)
+            catimg.append(product.catimg)
+    
+    print(catimg)
+    return render(request, 'products/mood.html', {
+        'products': mood_no_repeat,
+        'catimg': catimg
+        })
 
 def mood_show(request, category):
     category = Product.objects.filter(category=category)
@@ -57,24 +68,51 @@ def mood_show(request, category):
     
     return render(request, 'products/mood_show.html', {'category': category})
 
-# def calm(request):
-#     products = Product.objects.all()
-#     return render(request, 'products/calm.html', {'products': products})
-
-# def energize(request):
-#     return render(request, 'products/energize.html')
-
-# def indulge(request):
-#     return render(request, 'products/indulge.html')
-
-
 def cart(request):
     return render(request, 'ecommerce/cart.html')
 
-# def romance(request):
-#     return render(request, 'products/romance.html')
+def cart(request):
+    cart = Cart(request)
+    return render(request, 'cart/cart.html')
 
+def cart_add(request, product_id):
+    cart = Cart(request)
+    product = Product.objects.get(id=product_id)
+    cart.add(product=product)
+    return redirect('cart')
 
-# def sleep(request):
-#     return render(request, 'products/sleep.html')
+def item_clear(request, product_id):
+    cart = Cart(request)
+    product = Product.objects.get(id=product_id)
+    cart.remove(product)
+    return redirect("cart")
 
+def item_increment(request, product_id):
+    cart = Cart(request)
+    product = Product.objects.get(id=product_id)
+    cart.add(product=product)
+    return redirect("cart")
+
+def item_decrement(request, product_id):
+    cart = Cart(request)
+    product = Product.objects.get(id=product_id)
+    cart.decrement(product=product)
+    return redirect("cart")
+
+def cart_clear(request):
+    cart = Cart(request)
+    cart.clear()
+    return redirect("cart")
+
+def cart_detail(request):
+    return render(request, 'cart/cart_detail.html')
+    
+def cart_total_amount(request):
+	if request.user.is_authenticated:
+		cart = Cart(request)
+		total_bill = 0.0
+		for key,value in request.session['cart'].items():
+			total_bill = total_bill + (float(value['price']) * value['quantity'])
+		return {'cart_total_amount' : total_bill} 
+	else:
+		return {'cart_total_amount' : 0} 

@@ -9,7 +9,10 @@
             "description": "Overnight moisturizing face mask. Vegan and cruelty-free, this mask is infused with coconut water and prickly pear extract to hydrate, vitamin B-3 to energize, and fatty acids to seal in moisture so your skin stays supple and strong",
             "category": "sleep",
             "rating": 4,
-            "imgurl": "https://i.imgur.com/weEKbia.jpg"
+            "imgurl": "https://i.imgur.com/weEKbia.jpg",
+            "vidurl": "https://res.cloudinary.com/doihe1pi6/video/upload/v1617334126/production_ID_4154503_irr11s.mp4",
+            "image": "/product_images/facemask.jpg",
+            "catimg": "https://images.unsplash.com/photo-1610210144022-8e9303fece35?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
         }
         
     },
@@ -22,7 +25,10 @@
             "description": "Wake up on the right side of the bed with this vegan, cruelty-free, caffeine-infused serum that treats puffy skin and dark undereye circles.",
             "category": "energize",
             "rating": 3,
-            "imgurl": "https://i.imgur.com/vf5Vnn7.jpg"
+            "imgurl": "https://i.imgur.com/vf5Vnn7.jpg",
+            "vidurl":"na",
+            "image": "product_images/caffeineserum.jpg",
+            "catimg": "https://images.unsplash.com/photo-1442124920820-8e5f4b07b563?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80"
         }
         
     },
@@ -35,8 +41,10 @@
             "description": "Indulge your senses with these thirteen cute and carefully curated scented bath bombs meant to invigorate and destress your life.",
             "category": "indulge",
             "rating": 5,
-            "imgurl": "https://i.imgur.com/MJukatO.jpg"
-            
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617406839/pexels-rodnae-productions-6724612_r2cgej.mp4",
+            "imgurl": "https://i.imgur.com/pH40Bw7.jpg",
+            "image": "product_images/bathbomb1.jpg",
+            "catimg": "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
             
         }
         
@@ -45,12 +53,15 @@
         "model": "main_app.product",
         "pk": 4,
         "fields": {
-            "name": "Australian exfoliating soap",
+            "name": "Australian Exfoliating Soap",
             "price": 18,
             "description": "Wavertree & London Sweet Pea and Jasmine Australian natural luxury soap bar 6oz",
             "category": "calm",
             "rating": 4,
-            "imgurl": "https://i.imgur.com/pExQx2d.jpg"
+            "imgurl": "https://i.imgur.com/pExQx2d.jpg",
+            "vidurl": "na",
+            "image": "product_images/exfoliatingsoap.jpg",
+            "catimg": "https://images.unsplash.com/photo-1600338815964-28b2052b976a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
         }
         
     },
@@ -63,7 +74,10 @@
             "description": "Five essentials that work in harmony to revitalize dry, dehydrated skin, replenish vital moisture, and gently cleanse for deeply conditioned skin. Omega-rich fatty acids and vitamin c help keep your skin clear and vibrant.",
             "category": "indulge",
             "rating": 5,
-            "imgurl": "https://i.imgur.com/XSVkw30.jpg"
+            "imgurl": "https://i.imgur.com/XSVkw30.jpg",
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617334069/production_ID_4612264_i2w4pp.mp4",
+            "image": "product_images/clearskinkit.jpeg",
+            "catimg": "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -76,7 +90,10 @@
             "description": "A simple blend of Moroccan Rose Absolute essential oil, Rose-hip oil, mica.",
             "category": "romance",
             "rating": 3,
-            "imgurl": "https://i.imgur.com/rA02zy3.jpg"
+            "vidurl":"na",
+            "imgurl": "https://i.imgur.com/GET3Vrw.jpg",
+            "image": "product_images/sealant.jpg",
+            "catimg": "https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -89,7 +106,10 @@
             "description": "Water, Rose water concentrate, rose absolute essential oil, lemon essential oil, aloe gel.",
             "category": "romance",
             "rating": 4,
-            "imgurl": "https://i.imgur.com/RFCzXQS.jpg"
+            "imgurl": "https://i.imgur.com/RFCzXQS.jpg",
+            "vidurl":"na",
+            "image": "product_images/pinkpetalmoisturizer.jpg",
+            "catimg": "https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -102,7 +122,10 @@
             "description": "A blend of nourishing ingredients to combat dry, dull skin. Sweet almond oil, rose-hip oil, Argan oil, rose absolute essential, clary Sage essential oils, Lavender essential oil.",
             "category": "romance",
             "rating": 5,
-            "imgurl": "https://i.imgur.com/nM7xX7m.jpg"
+            "imgurl": "https://i.imgur.com/nM7xX7m.jpg",
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617334029/pexels-pavel-danilyuk-6446052_edyopr.mp4",
+            "image": "product_images/pinkpetaloil.jpg",
+            "catimg": "https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -115,7 +138,10 @@
             "description": "Candelilla ax, rosehip oil, Argan oil, rose absolute essential oil, eucalyptus oil.",
             "category": "romance",
             "rating": 4,
-            "imgurl": "https://i.imgur.com/uulLmt6.jpg"
+            "imgurl": "https://i.imgur.com/uulLmt6.jpg",
+            "vidurl":"na",
+            "image": "product_images/pinkpetalbalm.jpg",
+            "catimg": "https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -128,7 +154,10 @@
             "description": "Bentonite clay, water, Rose absolute essential oil, rose water concentrate.",
             "category": "romance",
             "rating": 4,
-            "imgurl": "https://i.imgur.com/Xyqq9Am.jpg"
+            "imgurl": "https://i.imgur.com/Xyqq9Am.jpg",
+            "vidurl":"na",
+            "image":  "product_images/pinkpetalmask.jpg",
+            "catimg": "https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -141,7 +170,10 @@
             "description": "Coconut milk, vitamin E & saponified oils of olive, coconut, grapeseed. Dried apples, cinnamon essential oil.",
             "category": "indulge",
             "rating": 4,
-            "imgurl": "https://i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg"
+            "imgurl": "https://i.pinimg.com/564x/8e/17/5b/8e175b735acd9c0590626119fc357338.jpg",
+            "vidurl":"na",
+            "image": "product_images/soap2",
+            "catimg": "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -154,7 +186,10 @@
             "description": "Dried apples, cinnamon essential oils incorporated into these 13 deliciously scented bath bombs.",
             "category": "indulge",
             "rating": 5,
-            "imgurl": "https://cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683"
+            "imgurl": "https://cdn.shopify.com/s/files/1/0060/2420/0292/products/DSC01370_1080x.jpg?v=1567684683",
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617406904/production_ID_4155512_zayryd.mp4",
+            "image": "product_images/bathbomb2",
+            "catimg": "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -167,7 +202,10 @@
             "description": "Coconut milk, vitamin E & saponified oils of olive, coconut, grapeseed. Lemon essential oil, cinnamon, Vanilla essential oil.",
             "category": "indulge",
             "rating": 5,
-            "imgurl": "https://i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg"
+            "imgurl": "https://i.etsystatic.com/21904152/r/il/172735/2562624566/il_1588xN.2562624566_t262.jpg",
+            "vidurl": "https://res.cloudinary.com/doihe1pi6/video/upload/v1617406886/pexels-gabby-k-6845761_f1vv7l.mp4",
+            "image": "product_images/lemonsoap.jpg",
+            "catimg": "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
         }
         
     },
@@ -180,7 +218,26 @@
             "description": "Lemon & Vanilla essential oil incorporated into these 13 deliciously scented bath bombs.",
             "category": "indulge",
             "rating": 5,
-            "imgurl": "https://images.saymedia-content.com/.image/t_share/MTc0NTAxMzUxODE5Mzg4OTE4/diy-bath-bomb-guide-and-7-inspiring-recipe-combinations.jpg"
+            "imgurl": "https://images.saymedia-content.com/.image/t_share/MTc0NTAxMzUxODE5Mzg4OTE4/diy-bath-bomb-guide-and-7-inspiring-recipe-combinations.jpg",
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617406855/pexels-vlada-karpovich-6708113_up7nwj.mp4",
+            "image": "product_images/bathbomb3.jpg",
+            "catimg": "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+        }
+        
+    },
+    {
+        "model": "main_app.product",
+        "pk": 15,
+        "fields": {
+            "name": "Double Ended Jade Roller",
+            "price": 45,
+            "description": "For battling a puffy face, stimulating lymphatic drainage, and promoting blood circulation. A must have.",
+            "category": "calm",
+            "rating": 5,
+            "vidurl":"https://res.cloudinary.com/doihe1pi6/video/upload/v1617333993/pexels-cup-of-couple-6633112_wg5glf.mp4",
+            "imgurl": "https://i.imgur.com/H31fMuu.jpg",
+            "image": "product_images/jade-roller.jpeg",
+            "catimg": "https://images.unsplash.com/photo-1600338815964-28b2052b976a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
         }
         
     }
