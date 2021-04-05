@@ -183,16 +183,7 @@ li {
 
 .p-tag {
     position:absolute;
-    z-index: 1;
-    color: white;
-    background: rgba(30, 67, 118, 0.50);
-    padding: 5px;
-    border-radius: 10px;
-
-}
-
-.p-tag {
-    position:absolute;
+    font-size: 20px;
     z-index: 1;
     color: white;
     background: rgba(116, 28, 21, 0.42);
