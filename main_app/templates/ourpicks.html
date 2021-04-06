@@ -7,31 +7,64 @@
   <span class="affirmation"> I acknowledge my own self-worth; my confidence is soaring.</span>
 </h2>
 <h1 class="prod-index-head">Our Picks</h1>
-<ul class="prod-index-ul">
-    
-  
-    {% for pick in product %}
-      <li class="prod-index-li">
-        <div class="prod-container">
-          <div class="img">
-            <img class="prod-index-img" src="{{ pick.imgurl }}"/>
-          </div>
-         <div class="middle">
-           <div class="prod-description"> 
-             {{ pick }}
-           </div>
-          </div>
+<ul class="prod-picks-ul">
+
+  <li class="prod-index-li">
+    <h4 class="picks-h4">Jessica's Pick</h4>
+    <div class="prod-container">
+      <div class="img">
+        <img class="prod-index-img" src="{{ product.jessica_pick.imgurl }}" />
+      </div>
+      <div class="middle">
+        <div class="prod-description">
+          {{ product.jessica_pick.description }}
         </div>
-         <a class="product_view" href="/products/{{pick.id}}">
-        <p class="product_text">{{ pick.name }}</p></a>
-        <p class="product_text">${{ pick.price}}0</p>
-        <p class="add_button"><a class="add_button_text" href="{% url 'cart_add' pick.id %}">ADD</a></p>  
-     
-        </li>
-        
-        
-        {% endfor %}
-        
+      </div>
+    </div>
+    <a class="product_view" href="/products/{{product.jessica_pick.id}}">
+      <p class="product_text">{{ product.jessica_pick.name }}</p>
+    </a>
+    <p class="product_text">${{ product.jessica_pick.price}}0</p>
+
+  </li>
+
+  <li class="prod-index-li">
+    <h4 class="picks-h4">Mocha's Pick</h4>
+    <div class="prod-container">
+      <div class="img">
+        <img class="prod-index-img" src="{{ product.mocha_pick.imgurl }}" />
+      </div>
+      <div class="middle">
+        <div class="prod-description">
+          {{ product.mocha_pick.description }}
+        </div>
+      </div>
+    </div>
+    <a class="product_view" href="/products/{{product.mocha_pick.id}}">
+      <p class="product_text">{{ product.mocha_pick.name }}</p>
+    </a>
+    <p class="product_text">${{ product.mocha_pick.price}}0</p>
+
+  </li>
+  <li class="prod-index-li">
+    <h4 class="picks-h4">Sophia's Pick</h4>
+    <div class="prod-container">
+      <div class="img">
+        <img class="prod-index-img" src="{{ product.sophia_pick.imgurl }}" />
+      </div>
+      <div class="middle">
+        <div class="prod-description">
+          {{ product.sophia_pick.description }}
+        </div>
+      </div>
+    </div>
+    <a class="product_view" href="/products/{{product.sophia_pick.id}}">
+      <p class="product_text">{{ product.sophia_pick.name }}</p>
+    </a>
+    <p class="product_text">${{ product.sophia_pick.price}}0</p>
+
+  </li>
+
 </ul>
 
 {% endblock %}

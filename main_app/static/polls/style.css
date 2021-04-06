@@ -499,6 +499,20 @@ a {
     height: 100%;
     width: auto;
 }
+
+                    /* OUR PICKS */
+
+.picks-h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.prod-picks-ul {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
                       /* CART */
 
 .cart-container {
