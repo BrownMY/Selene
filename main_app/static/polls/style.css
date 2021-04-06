@@ -502,8 +502,9 @@ a {
                     /* OUR PICKS */
 
 .picks-h4 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
+    color: cornflowerblue;
 }
 
 .prod-picks-ul {
