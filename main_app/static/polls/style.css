@@ -28,9 +28,7 @@ body {
     position: relative;
     width: 1200px;
     justify-content: center;
-    /* width: 80%;
-    width: 1100px; */
-    /* align-self: center; */
+    height: 900px;
     align-items: center;
     margin:0 auto;
     background: rgba(255, 255, 255, 0.80);
@@ -327,7 +325,7 @@ li {
     background-color: white;
 }
 
-.prod-index-head {
+.prod-index-head, .mood-h2, .spotlight-h2 {
     justify-content: center;
     display: flex;
     color: cornflowerblue;
@@ -348,9 +346,9 @@ li {
     align-items: center;
 }
 
-.spotlight-h2 {
+/* .spotlight-h2 {
     text-align: center;
-}
+} */
 
 .div-spotlight {
     position: relative;
@@ -451,10 +449,10 @@ a {
 }
                     /* MOOD PAGE */
 
-.mood-h2 {
+/* .mood-h2 {
     position: relative;
     text-align: center;
-}
+} */
 
 .main-mood-div {
     display: flex;
@@ -507,7 +505,7 @@ a {
 }
 
 .prod-picks-ul {
-    display: inline-flex;
+    /* display: inline-flex; */
     justify-content: center;
     text-align: center;
 }
